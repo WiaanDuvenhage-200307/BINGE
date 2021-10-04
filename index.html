@@ -1,3 +1,5 @@
+<!-- Wiaan Duvenhage #200307 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +8,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Your Metadata -->
+    <meta name="author" content="Wiaan Duvenhage">
+    <meta name="lecturer" content="Mike Maynard">
+    <meta name="studentnumber" content="200307">
+    <meta name="assignment" content="DV100_T4_root">
+    <meta name="subject" content="DV100_T4">
+    <meta name="class" content="2">
 
-    <title>Document</title>
 
+    <title>BINGE©</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css"/>
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
+    <!-- API KEY : 2b5c4ad7d6c5ddafd1383a90b3aca91b -->
+
+    <div class="container-fluid">
+
+        <div class="col-sm-12 d-lg-none d-md-none  row header"> <!--This is a div only visible on mobile-->
+
+            <nav>
+                <img class="hamburger" src="assets/icons/hamburger.svg" alt="hamburger" width="21px">
+                <div class="logo">
+                    <img class="logo" src="assets/Logo.svg" alt="logo" width="35px">
+                </div>
+                <img class="search" src="assets/icons/search.svg" alt="search" width="18px">
+            </nav>
+
+            <div class="sign-up-alert">
+                <h1>WELCOME!</h1>
+                <h2>Start watching now on BINGE</h2>
+                <h3>But First...</h3>
+                <h4>PLEASE SIGN UP TO OUR WEBSITE</h4>
+                <div class="btn-group">
+                    <button class="register-btn">REGISTER</button>
+                    <h2>OR</h2>
+                    <button class="login-btn">LOG IN</button>
+                </div>
+                
+            </div>
+           
+            <img  class="header-img" src="https://image.tmdb.org/t/p/w500/xeItgLK9qcafxbd8kYgv7XnMEog.jpg" alt="header" >
+            
+            
+            
+                
+        </div> <!--col-sm-12 row header MOBILE ONLY-->
+
+       
+
+        <div class="col-sm-12 d-lg-none d-md-none sub-heading row">
+
+            <h5>CHECK OUT OUR MOST POPULAR MOVIES!</h5>
+
+        </div>
+
+        <hr class="col-12 d-lg-none d-md-none ">
+
+        <div class="col-sm-12 d-lg-none d-md-none row">
+
+            <h6>Feel free to scroll through our selection</h6>
+            
+        </div>
+
+        <div class="col-sm-12 d-lg-none d-md-none movie-cards  row">
+            <div class="col-4">
+                <img src="https://image.tmdb.org/t/p/w500/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg" alt="the-flash" height="150px">
+            </div>
+            <div class="col-4">
+                <img src="https://image.tmdb.org/t/p/w500/3WfvjNWr5k1Zzww81b3GWc8KQhb.jpg" alt="the-flash" height="150px">
+            </div>
+            <div class="col-4">
+                <img src="https://image.tmdb.org/t/p/w500/keVNetuagK8nxZQRV0PcBD6SOaK.jpg" alt="the-flash" height="150px">
+            </div>
+        </div> <!--movie cards-->
+
+        <div class="col-12 d-lg-none d-md none register-reminder">
+            <h2>NOT YET SIGNED UP?</h2>
+            <button class="register-btn">REGISTER</button>
+        </div>
+
+        <div class="col-12 d-lg-none d-md-none footer">
+
+            <div class="col-4">
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>About Us</li>
+                    <li>Terms of Use</li>
+                </ul>
+            </div>
+
+            <div class="col-4 social-group">
+                <span><img src="assets/icons/facebook.svg" alt="facebook" width="14px"></span>
+                <span><img src="assets/icons/twitter.svg" alt="facebook" width="14px"></span>
+                <span><img src="assets/icons/instagram.svg" alt="facebook" width="14px"></span>
+                <span><img src="assets/icons/youtube.svg" alt="facebook" width="14px"></span>
+                <p>BINGE© | 2021</p>
+            </div>
+
+            <div class="col-4 email-phone">
+                <span><img src="assets/icons/phone.svg" alt="phone" width="14px"></span>
+                <span><img src="assets/icons/email.svg" alt="phone" width="14px"></span>
+                <span class="to-top"><img src="assets/icons/to-top.svg" alt="to-top" width="30px"></span>
+            </div>
+
+            
+
+
+
+        </div> <!--Mobile Footer-->
+
+        <div class="d-none d-md-block d-lg-block d-xl-none row header"> <!--Home Page for Only Tablet-->
+
+            <nav>
+                
+                <div class="logo">
+                    <img class="logo" src="assets/Logo.svg" alt="logo" width="35px">
+                </div>
+                <img class="hamburger" src="assets/icons/hamburger.svg" alt="hamburger" width="21px">
+                <img class="search" src="assets/icons/search.svg" alt="search" width="18px">
+            </nav>
+
+            <div class="sign-up-alert">
+                <h1>WELCOME!</h1>
+                <h2>Start watching now on BINGE</h2>
+                <h3>But First...</h3>
+                <h4>PLEASE SIGN UP TO OUR WEBSITE</h4>
+                <div class="btn-group">
+                    <button class="register-btn">REGISTER</button>
+                    <h2>OR</h2>
+                    <button class="login-btn">LOG IN</button>
+                </div>
+                
+            </div>
+           
+            <img  class="header-img" src="https://image.tmdb.org/t/p/w500/xeItgLK9qcafxbd8kYgv7XnMEog.jpg" alt="header" >
+
+        </div> <!--Tablet Header!-->
+
+    </div> <!--Container Fluid-->
+    
     
     <!-- JS -->
+    <script src="js/index.js"></script>
 </body>
 </html>
