@@ -1,18 +1,95 @@
+.container-fluid {
+    position: relative;
+}
+
 .library-header {
     height: 200px;
     width: 100%;
     position: relative;
     top: 100px;
-    left: 40%;
+    
 
 }
 
 .library-icon {
     height: 100px;
     width: 100px;
-    position: relative;
-
+    position: absolute;
+    background-image: url("/assets/icons/library.svg");
+    background-size: cover;
+    left: 20%;
 }
-.container-fluid {
+
+.header {
     position: relative;
+}
+.movie-cards{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.cards {
+    background-color: aliceblue;
+    height: 100px;
+    width: auto;
+    margin: auto;
+    padding: 100px;
+}
+.card-1 {
+    
+    background-size: cover;
+}
+.card-2 {
+    background-size: cover;
+}
+.card-3 {
+    background-size: cover;
+}
+
+
+.footer{
+    background-color: #605F67;
+    border-radius: 6px 6px 0px 0px;
+    font-family: 'Cantarell';
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    display: block;
+    margin-right: 20px;
+    color: white;
+}
+
+.social-group{
+    text-align: center;
+}
+
+.social-group p{
+    margin-top: 30px;
+    color: white;
+}
+
+span{
+    margin: 5px;
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.to-top{
+    margin-left: 10px;
 }
