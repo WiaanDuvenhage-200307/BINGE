@@ -1,0 +1,392 @@
+/* form {
+    background-color: #1C1B27;
+    width: 375px;
+    height: 60vh;
+    position: relative;
+    align-items: center;
+}
+
+.box{
+    position:absolute;
+    transform: translate(-50%, -50%);
+}
+
+.box input[type = "email"],.box input[type="password"]{
+    border-radius: 50px;
+} */
+
+/* body{
+    background-color: #1C1B27;
+  position: relative;
+    
+    background-color: #1C1B27;
+    height: 80vh;
+    text-align: center;
+    padding-top: 70%;
+    margin-left: 40%;
+    overflow-x: hidden;
+}
+img {
+    
+    margin-top: -12%;
+    height: 15%;
+    align-items: center;
+} */
+
+/* .left {
+    background-color: rgb(192, 192, 192);
+    height: 60vh;
+    text-align: center;
+    padding-top: 180px;
+    border: 10px solid white;
+    } */
+
+/* h1{
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffff;
+  
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: -2%;
+    margin-top: 15px;
+}
+
+h2{
+    font-family: 'Cantarell', sans-serif;
+    color: #ffff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -2%;
+    margin-top: -50px;
+}
+
+/* 
+.btn-create-account:hover{
+    box-shadow: 0 0 11px rgb(211, 65, 141); 
+}
+.btn-cancel:hover{
+     background-color: rgba(94, 29, 232, 1);
+ }
+.morph{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height:  90%;
+    width: 90%;
+    margin-top: 4%;
+    margin-left: 4%;
+    padding: 1%;
+} */
+
+/* input .password{
+    margin-left: -200px;
+} */
+
+/* input {
+    border-style: solid;
+    border-color: #5E1DE8;
+    border-radius: 65px;
+    height: 10px;
+    width: 85%;
+    background-color: #1C1B27;
+    text-align: left;
+    padding:5%;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    z-index: 9999;
+    margin-left: 2%;
+    position:inherit;
+}
+input:hover{
+    background-color:  rgba(94, 29, 232, 1);
+} */
+
+/* .hide{ */
+
+/* background-image: url(../assets/icons/hide.svg); */
+
+/* background-image: url(../assets/icons/hide.svg);
+    float: right;
+    margin-right: 30px ;
+    margin-top: -px;
+    z-index: 9999px;
+   
+} */
+
+/* .input-icon {
+    width: 85%;
+    background-position: 10vw;
+   position: relative;
+   margin-right: 20px;
+    /* background-image: url(../assets/icons/hide.svg);
+    background-repeat: no-repeat; */
+
+/* } */
+
+/* .icon {
+   
+   
+    background-image: url(../assets/icons/hide_small_ui.svg);
+    background-repeat: no-repeat;
+    margin-right: -20vh; */
+
+/* / */
+
+/* } */
+
+/* checkbpx */
+
+/* Customize the label (the container) */
+
+/* .container { */
+
+/* display: block; */
+
+/* position: relative; */
+
+/* padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.container-check { */
+
+/* 
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 50px; */
+
+/*     
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+p{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.7px;
+    margin-left: 65px; */
+
+/* } */
+
+/* .checkmark1 {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: -70%;
+    height: 20px;
+    width: 20px;
+    background-color: #1C1B27;
+  }
+
+  .checkmark2 {
+   margin-left: 4%;
+    margin-top: 2px;
+   float: left;
+    height: 20px;
+    width: 20px;
+    background-color: #1C1B27;
+  
+
+  checkbox{
+    background-color: #5E1DE8;
+    border-style: solid;
+  }
+checked ~ .checkmark {
+    background-color: #5E1DE8; */
+
+/* color: #1C1B27;
+  }
+  
+  .btn-create-account{
+      border-style: solid;
+      background-color: #D3418D;
+      color: #ffff;
+      justify-content: center;
+  }
+
+  .btn-cancel{
+    border-style: solid;
+    border-color: #5E1DE8;
+  } */
+
+body {
+    background-color: #1C1B27;
+    height: 90%;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    background-color: #1C1B27;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.logo {
+    margin-top: 3%;
+    margin-left: 33%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: -2%;
+    margin-top: 15px;
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: -2%;
+    margin-top: 15px;
+}
+
+.have-acc-btn {
+    border-radius: 60px;
+    text-align: center;
+    height: 35px;
+    width: 55vw;
+    font-size: 10px;
+    border: 1px solid;
+    padding: 2px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+h3 {
+    font-size: 8px;
+    color: #D3418D;
+    padding: 2px;
+    align-items: center;
+    font-family: 'Cantarell', sans-serif
+}
+
+p {
+    float: right;
+    color: white;
+    font-size: 10px;
+    margin-left: 5%;
+}
+
+.tnc {
+    margin-top: -20px;
+    margin-right: 39%;
+}
+
+.entered-info {
+    margin-top: -20px;
+    margin-right: 39%;
+}
+
+button {
+    border: solid;
+    border-radius: 60px;
+    color: #D3418D;
+    border-style: solid;
+    background-color: #1C1B27;
+}
+
+.btn-create-account {
+    border-radius: 60px;
+    align-content: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: #D3418D;
+    color: #ffff;
+    border: #D3418D;
+    height: 40px;
+    width: 70%;
+}
+
+.btn-cancel {
+    border-style: solid;
+    border-color: #5E1DE8;
+    border-radius: 60px;
+    height: 40px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+form {
+    background-color: #1C1B27;
+    height: 60vh;
+    position: relative;
+    align-items: center;
+    margin-left: 2%;
+    padding-bottom: 1%;
+}
+
+input {
+    border: 1px solid;
+    border-radius: 30px;
+    width: 46vh;
+    text-align: start;
+    color: #5E1DE8;
+    background-color: #1C1B27;
+    margin-bottom: 3px;
+}
+
+.psw {
+    margin-bottom: 6px;
+}
+
+.box {
+    position: absolute;
+}
+
+.card-inner {
+    margin-bottom: 2px;
+    background: rgba(255, 255, 255, 0.014);
+    box-shadow: 0 8px 32px 0 rgba(28, 27, 39 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.014);
+    height: 95%;
+    width: 92%;
+    margin-left: 2%;
+    padding: 1%;
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.card-body {
+    background-color: #1C1B27;
+}
+
+.card-face {
+    background-color: #1C1B27;
+}
+
+.card-face .card-face-front {
+    background-color: #1C1B27;
+}
+
+.checkmark1 {
+    margin-left: -40%;
+    margin-top: 5%;
+}
+
+.checkmark2 {
+    margin-left: -40%;
+    margin-top: 5%;
+}
