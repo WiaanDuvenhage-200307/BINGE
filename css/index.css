@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+
+
 body{
-    background-color: #1D1B27 ;
+    background-color: #1D1B27;
 }
+
+
 
 .header{
     height: 205px;
@@ -132,6 +136,7 @@ button{
 
 .movie-cards{
     padding-top: 50px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -143,3 +148,76 @@ button{
 .sub-heading{
     margin-top: 100px;
 }
+
+.register-reminder{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer{
+    background-color: #605F67;
+    border-radius: 6px 6px 0px 0px;
+    font-family: 'Cantarell';
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    display: block;
+    margin-right: 20px;
+    color: white;
+}
+
+.social-group{
+    text-align: center;
+}
+
+.social-group p{
+    margin-top: 30px;
+    color: white;
+}
+
+span{
+    margin: 5px;
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.to-top{
+    margin-left: 10px;
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+    .sign-up-alert{
+        width: 700px;
+    }
+
+    .btn-group{
+        display: flex;
+        justify-content: center;
+    }
+
+    .register-btn, .login-btn{
+        margin: 0px 40px;
+    }
+
+    .header-img{
+        position: absolute;
+        bottom: 900px;
+        height: 500px;
+    }
+
+}
+
