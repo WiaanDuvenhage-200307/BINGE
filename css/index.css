@@ -233,5 +233,10 @@ span{
         height: 500px;
     }
 
+    .movie-cards{
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
