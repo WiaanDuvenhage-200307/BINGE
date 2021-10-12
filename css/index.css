@@ -137,12 +137,6 @@ button{
 .movie-cards{
     padding-top: 50px;
     padding-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .email-phone{
@@ -210,6 +204,10 @@ span{
     margin-left: 10px;
 }
 
+.fix{
+    float: left;
+}
+
 /* @media queries */
 
 @media only screen and (min-width: 768px){
@@ -231,11 +229,6 @@ span{
         position: absolute;
         bottom: 900px;
         height: 500px;
-    }
-
-    .movie-cards{
-        display: flex;
-        flex-direction: row;
     }
 
 }
