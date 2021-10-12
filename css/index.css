@@ -1,235 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-
-body{
-    background-color: #1D1B27;
-}
-
-
-
-.header{
-    height: 205px;
-}
-
-nav{
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-}
 .logo{
-   margin-top: 4px;
+    text-align: center;
+    padding: 10px;
 }
 
-.hamburger{
-    width: 21px;
-    height: 21px;
-    margin-top: 16px;
-    margin-left: 19px;
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
-.search{
-    margin: 18px
+.profile-icon{
+    padding: 20px;
+}
+
+.profile-icon p{
+    color: white;
 }
 
 .header-img{
+    height: 366px;
     object-fit: cover;
-    height: 300px;
-    padding-bottom: 17px;
-    position: absolute;
-    z-index: -1;
-    margin-bottom: 30px;
+    object-position: 100% 0;
+    opacity: 50%;
+    margin-bottom: 44px;
 }
 
-.sign-up-alert{
-    width: 300px;
-    height: 230px;
-    margin: 0 auto;
-    border-radius: 6px;
-    background-image: linear-gradient( to right ,rgba(0,0,0,0.8) , rgba(29,27,39,0.8));
-    padding: 6px;
-    position: relative;
-    top: 51px;
+.search-bar{
+    height: 50px;
+    width: 250px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px;   
+}
+
+.search-bar h2{
+    font-family: 'Cantarell';
+    text-align: left;
+    font-size: 14px;
 }
 
 h1{
-    font-family: 'Fjalla One';
-    color: white;
-    text-align: center;
     font-size: 48px;
 }
 
-h2{
-    font-size: 14px;
-    font-family: 'Cantarell';
-    color: white;
-    text-align: center;
-}
-
-h3{
-    font-size: 14px;
-    font-family: 'Cantarell';
-    color: white;
-    text-align: center;
-}
-
-h4{
-    color: white;
-    font-family: 'Cantarell';
-    text-align: center;
-
-}
-
-h5{
-    text-align: center;
-    font-family: 'Fjalla One';
-    color: white;
-    font-size: 15px;
-}
-
 hr{
-    margin: 0 auto;
-    width: 100px;
-    border-top: 3px solid #D3418D;
+    width: 800px;
+    border-top: 2px solid #D3418D;
+    margin-bottom: 20px;
 }
 
-h6{
-    padding-top: 11px;
-    text-align: center;
-    font-family: 'Cantarell';
-    color: white;
-    font-size: 11px;
+h2{
+    font-size: 23px;
 }
 
-.btn-group{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+.movie{
+    display: inline;
 }
 
-button{
-    padding: 8px;
-    border-radius: 30px;
-    width: 120px;
-    font-family: "Fjalla One";
-}
-
-.register-btn{
-    background-color: #D3418D;
-    border: none;
-    color: white;
-}
-
-.login-btn{
-    border: 3px solid #5E1DE8;
-    background-color: transparent;
-    color: white;
-}
-
-.movie-cards{
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
-
-.email-phone{
-    position: relative;
-    right: 20px;
-}
-
-.sub-heading{
-    margin-top: 100px;
-}
-
-.register-reminder{
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-/* Footer Styling */
-
-.footer{
-    background-color: #605F67;
-    border-radius: 6px 6px 0px 0px;
-    font-family: 'Cantarell';
-    font-size: 11px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-li{
-    display: block;
-    margin-right: 20px;
-    color: black;
-    font-size: 11px;
-    font-family: "cantarell";
-    text-align: center;
-    border-radius: 10px;
-    background-color: white;
-    margin-bottom: 10px;
-}
-
-.social-group{
-    text-align: center;
-}
-
-.social-group p{
-    margin-top: 30px;
-    color: white;
-}
-
-span{
-    margin: 5px;
-}
-
-.email-phone{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.to-top{
-    margin-left: 10px;
-}
-
-.fix{
-    float: left;
-}
-
-/* @media queries */
-
-@media only screen and (min-width: 768px){
-
-    .sign-up-alert{
-        width: 700px;
-    }
-
-    .btn-group{
-        display: flex;
-        justify-content: center;
-    }
-
-    .register-btn, .login-btn{
-        margin: 0px 40px;
-    }
-
-    .header-img{
-        position: absolute;
-        bottom: 900px;
-        height: 500px;
-    }
-
-}
 
