@@ -47,24 +47,43 @@
             <div class="col-xxl-8 nav-items">
 
                 <ul>
-                    <li>HOME</li>
-                    <li>LIBRARY</li>
+                    <a href="#"><li style="color: #D3418D;">HOME</li></a>
+                    <a href="pages/movie-library.html"><li>LIBRARY</li></a>
                     <li>ABOUT</li>
-                    <li>BINGE LIST</li>
+                    <a href="pages/watch-later.html"><li>BINGE LIST</li></a>
                 </ul>
 
             </div>
 
-            <div class="col-xxl-1 profile-icon">
-                <a href="pages/login-and-register.html"></a><img src="assets/icons/account.svg" alt="icon" height="48px">
+            <div class="col-xxl-1 profile-group">
+                <a href="pages/login-and-register.html"></a><img class="profile-icon" src="assets/icons/account.svg" alt="icon" height="48px">
                 <p>Account</p>
             </div>
 
             <div class="col-xxl-2 search-bar">
                 <h2>Search...</h2>
             </div>
+
+            <div class="welcome-msg">
+
+                <h1>WELCOME!</h1>
+                <h2>Start watching on BINGE now</h2>
+                <h3>But first...</h3>
+                <h4><strong>PLEASE SIGN UP TO OUR WEBSITE</strong></h4>
+
+                <div class="button-group">
+                    <a href="pages/login-and-register.html"><button class="btn btn-primary" style="float:left">REGISTER</button></a>
+                    <p style="float: left;">Or</p>
+                    <button class="btn btn-secondary"style="float:left">LOG IN</button>
+                </div>
                 
-            <img class="header-img" src="https://image.tmdb.org/t/p/original/yO2LFaO62SoM1ZuOq26hWLF1TQ4.jpg" alt="">
+            </div>
+            
+            <div class="col-xxl-12 header-img">
+               
+                
+            </div>
+           
           
         </div>
         
@@ -72,17 +91,52 @@
 
     <main>
 
-        <h1>Check our suggested recommendation for you</h1>
-        <hr>
-        <h2>Feel free to scroll through our selection</h2>
+        <div class="container-fluid">
 
-        <div class="movie-cards row">
-            
-        </div>
+            <h1>Check our suggested recommendation for you</h1>
+            <hr>
+            <h2>Feel free to scroll through our selection</h2>
+
+            <div class="movie-cards row">
+                
+            </div> <!--Movie Cards-->
+
+            <div class="register-remind row">
+                
+                <h2><strong>Register to view the rest of our website</strong></h2>
+                <button class="btn btn-primary"><a href="pages/login-and-register.html">REGISTER</a></button>
+
+            </div>
+
+        </div> <!--Container Fluid-->
 
     </main> <!--Main Content-->
 
-    <footer>
+    <footer class="row">
+
+        <div class="col-xxl-4 legal-info">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>About Us</li>
+                <li>Terms of Use</li>
+            </ul>
+        </div>
+
+        <div class="col-xxl-4 socials">
+            <p style="color: white;">BINGE© | 2021</p>
+            <img src="assets/icons/instagram.svg" alt="instagram" height="30px">
+            <img src="assets/icons/facebook.svg" alt="facebook" height="30px">
+            <img src="assets/icons/youtube.svg" alt="youtube" height="30px">
+            <img src="assets/icons/twitter.svg" alt="twitter" height="30px">
+        </div>
+
+        <div class="col-xxl-4 contact-info">
+            <ul>
+                <a href="mailto:support@binge.co.za"><li>support@binge.co.za</li></a>
+                <li>+27 64 982 7731</li>
+            </ul>
+        </div>
+        
 
     </footer> <!--Footer Content-->
 

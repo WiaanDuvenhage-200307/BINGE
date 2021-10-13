@@ -1,5 +1,13 @@
 $(function(){
 
+    $(".profile-icon").hover(function(){
+        $(this).attr("src", "assets/icons/account-hover.svg");
+        }, function(){
+        $(this).attr("src", "assets/icons/account.svg");
+    });
+
+
+    // Getting all the images of all the movies
     const url = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=1";
 
     const imagePrefix = "https://image.tmdb.org/t/p/original";
@@ -19,6 +27,19 @@ $(function(){
         });
 
     });
+
+    // getting details of movie
+
+    
+
+    const movieDetails = "https://api.themoviedb.org/3/movie/";
+
+    $.getJSON(movieDetails, result =>{
+
+        console.log(result);
+
+    });
+
 
     
 
