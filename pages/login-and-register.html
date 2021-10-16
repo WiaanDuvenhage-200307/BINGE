@@ -15,115 +15,115 @@
     <meta name="class" content="2">
 
     <title>LOGIN & REGISTER</title>
+    <title>BINGE©</title>
+
+    <!--Shanre Scheepers-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--BS-->
     <link rel="stylesheet" href="../css/login-and-register.css">
     <!--CSS-->
     <script src="../js/login-and-register.js"></script>
     <!--JS-->
-
-    <title>BINGE©</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!--BS-->
-    <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/index.css" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- jQuery CDN -->
+    <link rel="stylesheet" href="../css/index.css" /><!-- CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--iconscout link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Fjalla+One&display=swap" rel="stylesheet">
-    <!-- Fonts -->
-    <!-- Wiaan Duvenhage16:53 -->
-    <!--Shanre & Marco-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!--BS-->
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap"
         rel="stylesheet">
-    <!--Shanre Scheepers-->
+
+
+
 </head>
 
 <body>
-    <!--Shanre Scheepers-->
-    <div class="container-fluid">
-        <!--set the mobile scale layout only hiding md and lg for now-->
 
-        <div class="col-sm-12 d-md-none d-lg-none header-row">
-            <img class="logo" src="../assets/Logo.svg" alt="mainlogo" width="100px" style="margin-top: 6%;">
-            <!--CSS does not want to add the m-top rule-->
-            <!--BINGE LOGO-->
-            <div class="login-and-register-container">
-                <!--start of registration container-->
-                <form class="box" action="/index.html" method="POST">
+    <div class="section">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-sm-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                        <img src="/img/binge-logo-sm.svg" class="binge-logo">
+                        <h6 class="md-0 pb-3">
+                            <span>REGISTER</span>
+                            <span>LOG IN</span>
+                        </h6>
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                        <label for="reg-log"></label>
 
-                        <h1>WELCOME</h1>
-                        <h2>CREATE YOUR ACCOUNT HERE</h2>
-                    <button class="have-acc-btn">
-                        <h3 style="font-size: 12px;">ALREADY HAVE AN ACCOUNT?</h3>
-                    </button>
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">REGISTER</h4>
+                                            <div class="form-group">
+                                                <input class="firstname" type="text" placeholder="First Name" id="fname" name="fname"
+                                                    style="margin-bottom: 4%;" required><br>
 
-                    
-                    <div class="card-face card-face-front">
-                        <div class="card-inner">
-                            <!--Text Input Fields Starts Here-->
-                            <!-- <div class="card-face card-face-front"></div> -->
-                                <input type="text" placeholder="First Name" id="fname" name="fname" style="margin-bottom: 6px;"
-                                    required>
-                                <input type="text" placeholder="Last Name" id="lname" name="lname" style="margin-bottom: 6px;"
-                                    required>
-                                <input class="email" type="email" placeholder="Your Email" id="email" name="email"
-                                    style="margin-bottom: 6px;" required><br>
-                                <input class="psw" type="password" placeholder="Password"
-                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                    title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
-                                    required><br>
-                                    <!-- This code says the input needed = password with digit, lower and uppercase 8+ characters long -->
-                                    <!--Form Name Email Password Input Fields-->
+                                                <input class="lastname" type="text" placeholder="Last Name" id="lname" name="lname"
+                                                style="margin-bottom: 4%;" required><br>
+                                                <input class="email" type="email" placeholder="Your Email" id="email"
+                                                    name="email"  style="margin-bottom: 4%;" required><br>
+                                                <input class="psw" type="password" placeholder="Password"
+                                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                                    title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
+                                                    required><br>
+                                                <!-- This code says the input needed = password with digit, lower and uppercase 8+ characters long -->
+                                                <!--Form Name Email Password Input Fields-->
+                                                <a href="#" class="btn prim mt-4">SUBMIT</a>
+                                                <a href="#" class="btn sec mt-4">CANCEL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <label class="container-checkbox">
-                                <input class="checkmark1" type="checkbox">
-                                <p class="tnc">Accept the terms & conditions</p><br>
-                                <input class="checkmark2" type="checkbox">
-                                <p class="entered-info">Entered information is accurate</p><br>
-                            </label>
-                            <!--Form Checkboxes-->
-                    
-                    
-                                <button class="btn-create-account">CREATE ACCOUNT</button>
-                                <!--REGISTER-->
-                                <button class="btn-cancel">CANCEL</button>
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="md-4 pb-3">LOG IN</h4>
+                                            <div class="form-group">
+                                              
+                                            <div class="form-group mt-2">
+                                                <input type="text" name="logname" class="form-style logname" placeholder="Full Name" id="logname" autocomplete="off" autofocus style="margin-bottom: 8px;">
+                                                <input class="form-style logemail" type="email" placeholder="Your Email" id="email"
+                                                    name="email" style="margin-bottom: 6px;" required>
+
+                                                <input class="form-style pswlog" type="password" placeholder="Your Password"
+                                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                                    title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
+                                                    required name="logpass">
+                                            </div>
+                                           
+                                        </div>
+                                            <a href="#" class="btn mt-4 login">SUBMIT</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <!--End of Card-Inner-->
-                </form>
-                <!--End of Form Inputs-->
-
-                <div class="card-face card-face-back">
-                    <!--LOGIN FORM STARTS HERE/Back of the flipcard-->
-                    <div class="card-content">
-                        
-                    </div>
                 </div>
-    
-    
-            
             </div>
-            <!--End of login-and-registration-container-->
-
-           
+        </div>
     </div>
-   
-  
+    </div>
 
 
 
 
-  
-
+    </div>
+    </div>
+</body>
+</html>
 
 
     <!-- <div class="container">
@@ -138,29 +138,11 @@
                             <h3>ALREADY HAVE AN ACCOUNT?</h3>
                         </button>
 
-                        <div class="morph">
-                            <input type="email" placeholder="Your Email" id="email" name="email" required>
-                            <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
-                                required>
-                            This code says the input needed = password with digit, lower and uppercase 8+ characters long
-   
-    <! <img class="hide" src="../assets/icons/hide.svg">  FOR HIDE UI ICON===class="input-icon icon i"-->
-
-    <!-- <label class="container-checkbox">
-                                <input class="checkmark1" type="checkbox">
-                                <p>Accept the terms & conditions</p>
-                                <input class="checkmark2" type="checkbox">
-                                <p>All the entered information is accurate and authentic</p>
-                            </label>
-                            <button class="btn-create-account">CREATE ACCOUNT</button>
-                            <button class="btn-cancel"></button>
 
 
-    
 
 
-   
+
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
@@ -168,5 +150,7 @@
     <!-- JS -->
     <script src="../js/index.js"></script>
 </body>
+   
+
 
 </html>
