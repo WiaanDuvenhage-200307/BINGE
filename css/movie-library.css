@@ -2,13 +2,26 @@
     position: relative;
 }
 
-.library-header {
+hr {
+    margin-top: 5%;
+}
+
+.libraryHeader {
     height: 200px;
     width: 100%;
     position: relative;
     top: 100px;
-    
+}
 
+.card {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+
+.card:hover{
+    cursor: pointer;
 }
 
 .library-icon {
@@ -67,20 +80,17 @@ li{
     margin-top: 30px;
     color: white;
 }
-
-.filter {
-
-    
+  .filter{
+      display: flex;
+      justify-content: center;
   }
-  
   .filter-button {
     border-radius: 4px;
     padding: 10px 15px;
     background-color: #131313;
-    margin: 0px 2.5px;
+    margin: 5px 2.5px;
     color: white;
   }
-  
   .filter-button:hover {
     cursor: pointer;
   }

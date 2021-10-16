@@ -20,7 +20,7 @@ $(function(){
             $(".movie-cards").append(`
 
                 <div class="col-xxl-2 movie">
-                    // <img src=${imagePrefix + i.poster_path} alt="movie_card height="323px" width="100%">
+                    <br> <img src=${imagePrefix + i.poster_path} alt="movie_card height="323px" width="100%">
                 </div>
 
            `);
