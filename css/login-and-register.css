@@ -15,24 +15,6 @@
     border-radius: 50px;
 } */
 
-/* body{
-    background-color: #1C1B27;
-  position: relative;
-    
-    background-color: #1C1B27;
-    height: 80vh;
-    text-align: center;
-    padding-top: 70%;
-    margin-left: 40%;
-    overflow-x: hidden;
-}
-img {
-    
-    margin-top: -12%;
-    height: 15%;
-    align-items: center;
-} */
-
 /* .left {
     background-color: rgb(192, 192, 192);
     height: 60vh;
@@ -220,24 +202,101 @@ checked ~ .checkmark {
     border-color: #5E1DE8;
   } */
 
+:root {
+    --bg: #1C1B27;
+    --primary: #D3418D;
+    --secondary: #5E1DE8;
+    --tertiary: #ffff;
+}
+
+/* CSS RULES TO NOT WRITE THE WHOLE TIME */
+
 body {
     background-color: #1C1B27;
     height: 90%;
     overflow-x: hidden;
+    justify-content: center;
 }
 
 .container-fluid {
     background-color: #1C1B27;
     overflow: hidden;
     height: 100vh;
+    
 }
 
 .logo {
-    margin-top: 3%;
-    margin-left: 33%;
+    margin-top: 6%;
+    margin-left: 35%;
     margin-bottom: 5%;
 }
 
+.login-and-registration-container {
+    margin: 100px auto 0;
+    padding: 0;
+}
+
+.card-inner {
+    margin-bottom: 2px;
+    background: rgba(255, 255, 255, 0.014);
+    box-shadow: 0 8px 32px 0 rgba(28, 27, 39 0.37);
+    backdrop-filter: blur( 6.5px);
+    -webkit-backdrop-filter: blur( 6.5px); /*blur glass effect added*/
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.014);
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+    padding: 1%;
+    flex-direction: column;
+    min-width: 0;
+    transition: transform 1s;
+    /*tranform property used for the transitioning*/
+    transform-style: preserve-3d;
+    /*preserve this(card) in a 3d space when it moves)*/
+    cursor: pointer;
+    /*looks clickable then*/
+    position: relative;
+    /*because I need to add some absolutes here*/
+}
+
+.card-inner .is-flipped {
+    transform: rotateY(180deg);
+    /*pass through 180 degrees -  add JS functionality that applies to this. When card inner is clicked, add is-flipped to the card*/
+}
+.card-face{
+   
+    width: 92%;
+    height: 100%;
+    /* -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; hides the backface */
+    overflow: hidden;
+    border-radius: 16;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+.card-face-front{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+.card-face-back{
+    background-color: var(--bg);
+    transform: rotateY(180deg); /*sent to the back of card-face-front*/
+}
+
+.card-body {
+    background-color: #1C1B27;
+}
+
+.card-face {
+    background-color: #1C1B27;
+}
+
+.card-face .card-face-front {
+    background-color: #1C1B27;
+}
 h1 {
     font-family: 'Fjalla One', sans-serif;
     color: #ffff;
@@ -246,6 +305,7 @@ h1 {
     font-size: 64px;
     letter-spacing: -2%;
     margin-top: 15px;
+    justify-content: center;
 }
 
 h2 {
@@ -256,6 +316,7 @@ h2 {
     font-size: 64px;
     letter-spacing: -2%;
     margin-top: 15px;
+    justify-content: center;
 }
 
 .have-acc-btn {
@@ -266,11 +327,13 @@ h2 {
     font-size: 10px;
     border: 1px solid;
     padding: 2px;
-    margin-left: 20%;
+    margin-left: 21%;
     margin-bottom: 5%;
+    justify-content: center;
 }
 
 h3 {
+    justify-content: center;
     font-size: 8px;
     color: #D3418D;
     padding: 2px;
@@ -304,6 +367,7 @@ button {
 }
 
 .btn-create-account {
+    justify-content: center;
     border-radius: 60px;
     align-content: center;
     margin-left: 15%;
@@ -323,6 +387,8 @@ button {
     width: 70%;
     margin-left: 15%;
     margin-top: 5%;
+    justify-content: center;
+
 }
 
 form {
@@ -332,16 +398,18 @@ form {
     align-items: center;
     margin-left: 2%;
     padding-bottom: 1%;
+    justify-content: center;
 }
 
 input {
     border: 1px solid;
     border-radius: 30px;
-    width: 46vh;
+    width: 44vh;
     text-align: start;
     color: #5E1DE8;
     background-color: #1C1B27;
     margin-bottom: 3px;
+    justify-content: center;
 }
 
 .psw {
@@ -352,34 +420,7 @@ input {
     position: absolute;
 }
 
-.card-inner {
-    margin-bottom: 2px;
-    background: rgba(255, 255, 255, 0.014);
-    box-shadow: 0 8px 32px 0 rgba(28, 27, 39 0.37);
-    backdrop-filter: blur( 6.5px);
-    -webkit-backdrop-filter: blur( 6.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.014);
-    height: 95%;
-    width: 92%;
-    margin-left: 2%;
-    padding: 1%;
-    position: relative;
-    flex-direction: column;
-    min-width: 0;
-}
 
-.card-body {
-    background-color: #1C1B27;
-}
-
-.card-face {
-    background-color: #1C1B27;
-}
-
-.card-face .card-face-front {
-    background-color: #1C1B27;
-}
 
 .checkmark1 {
     margin-left: -40%;

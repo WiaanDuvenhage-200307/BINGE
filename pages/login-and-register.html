@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Your Metadata -->
-    <meta name="author" content="Wiaan Duvenhage">
+    <meta name="author" content="Shanre Scheepers">
     <meta name="lecturer" content="Mike Maynard">
-    <meta name="studentnumber" content="200307">
+    <meta name="studentnumber" content="21100387">
     <meta name="assignment" content="DV100_T4_root">
     <meta name="subject" content="DV100_T4">
     <meta name="class" content="2">
@@ -21,11 +21,13 @@
     <!--JS-->
 
     <title>BINGE©</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--BS-->
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/index.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--FONTS-->
@@ -34,76 +36,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Fjalla+One&display=swap" rel="stylesheet">
     <!-- Fonts -->
     <!-- Wiaan Duvenhage16:53 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!--BS-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap"
+        rel="stylesheet">
+    <!--Shanre Scheepers-->
 </head>
 
 <body>
-
+    <!--Shanre Scheepers-->
     <div class="container-fluid">
-        <!--set the mobil scale layout-->
+        <!--set the mobile scale layout only hiding md and lg for now-->
+
         <div class="col-sm-12 d-md-none d-lg-none header-row">
-            <img class="logo" src="../assets/Logo.svg" alt="mainlogo" width="100px">
-
-
+            <img class="logo" src="../assets/Logo.svg" alt="mainlogo" width="100px" style="margin-top: 6%;">
+            <!--CSS does not want to add the m-top rule-->
+            <!--BINGE LOGO-->
             <div class="login-and-register-container">
+                <!--start of registration container-->
                 <form class="box" action="/index.html" method="POST">
-                    <h1>WELCOME</h1>
-                    <h2>CREATE YOUR ACCOUNT HERE</h2>
+
+                        <h1>WELCOME</h1>
+                        <h2>CREATE YOUR ACCOUNT HERE</h2>
                     <button class="have-acc-btn">
                         <h3 style="font-size: 12px;">ALREADY HAVE AN ACCOUNT?</h3>
                     </button>
 
-                    <div class="card-inner">
-                        <!-- <div class="card-face card-face-front"></div> -->
+                    
+                    <div class="card-face card-face-front">
+                        <div class="card-inner">
+                            <!--Text Input Fields Starts Here-->
+                            <!-- <div class="card-face card-face-front"></div> -->
+                                <input type="text" placeholder="First Name" id="fname" name="fname" style="margin-bottom: 6px;"
+                                    required>
+                                <input type="text" placeholder="Last Name" id="lname" name="lname" style="margin-bottom: 6px;"
+                                    required>
+                                <input class="email" type="email" placeholder="Your Email" id="email" name="email"
+                                    style="margin-bottom: 6px;" required><br>
+                                <input class="psw" type="password" placeholder="Password"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
+                                    required><br>
+                                    <!-- This code says the input needed = password with digit, lower and uppercase 8+ characters long -->
+                                    <!--Form Name Email Password Input Fields-->
 
-
-
-                        <input type="text" placeholder="First Name" id="fname" name="fname" style="margin-bottom: 6px;"
-                            required>
-                        <input type="text" placeholder="Last Name" id="lname" name="lname" style="margin-bottom: 6px;"
-                            required>
-                        <input class="email" type="email" placeholder="Your Email" id="email" name="email"
-                            style="margin-bottom: 6px;" required><br>
-                        <input class="psw" type="password" placeholder="Password"
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                            title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
-                            required><br>
-                        <!-- This code says the input needed = password with digit, lower and uppercase 8+ characters long -->
-                        <label class="container-checkbox">
-                            <input class="checkmark1" type="checkbox">
-                            <p class="tnc">Accept the terms & conditions</p><br>
-                            <input class="checkmark2" type="checkbox">
-                            <p class="entered-info">Entered information is accurate</p><br>
-                        </label>
+                            <label class="container-checkbox">
+                                <input class="checkmark1" type="checkbox">
+                                <p class="tnc">Accept the terms & conditions</p><br>
+                                <input class="checkmark2" type="checkbox">
+                                <p class="entered-info">Entered information is accurate</p><br>
+                            </label>
+                            <!--Form Checkboxes-->
+                    
+                    
+                                <button class="btn-create-account">CREATE ACCOUNT</button>
+                                <!--REGISTER-->
+                                <button class="btn-cancel">CANCEL</button>
+                        </div>
+                    </div>
+                    <!--End of Card-Inner-->
                 </form>
-                <button class="btn-create-account">CREATE ACCOUNT</button>
-                <button class="btn-cancel">CANCEL</button>
-            </div>
+                <!--End of Form Inputs-->
 
-            <div class="card-face card-face-back">
-                <div class="card-content">
-
-
+                <div class="card-face card-face-back">
+                    <!--LOGIN FORM STARTS HERE/Back of the flipcard-->
+                    <div class="card-content">
+                        
+                    </div>
                 </div>
-                <div class="card-body">
-
-                </div>
+    
+    
+            
             </div>
-        </div>
+            <!--End of login-and-registration-container-->
+
+           
     </div>
-    </div>
+   
+  
 
 
 
 
-    </div>
-    </div>
+  
 
 
 
@@ -143,7 +159,9 @@
 
    
     <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="../js/index.js"></script>
 </body>
