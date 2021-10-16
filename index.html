@@ -38,6 +38,36 @@
     
 
     <header>
+
+    
+        <div class="hamburger-nav">
+
+            <div class="navbar navbar-dark bg-dark">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".hamburger-items" aria-controls= "hamburger-items" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+            
+                <div class="col-xxl-1 logo">
+                    <img  src="assets/Logo.svg" alt="logo" height="30px">
+                </div>
+
+            </div>
+
+            <div class="hamburger-items">
+
+                <ul>
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                    <li>Link</li>
+                </ul>
+
+            </div>
+
+            
+
+        </div>
+        
+
         <div class="nav-bar row">
 
             <div class="col-xxl-1 logo">
@@ -64,23 +94,23 @@
                 <h2>Search...</h2>
             </div>
 
-            <div class="welcome-msg">
-
-                <h1>WELCOME!</h1>
-                <h2>Start watching on BINGE now</h2>
-                <h3>But first...</h3>
-                <h4><strong>PLEASE SIGN UP TO OUR WEBSITE</strong></h4>
-
-                <div class="button-group">
-                    <a href="pages/login-and-register.html"><button class="btn btn-primary" style="float:left">REGISTER</button></a>
-                    <p style="float: left;">Or</p>
-                    <button class="btn btn-secondary"style="float:left">LOG IN</button>
-                </div>
-                
-            </div>
+           
             
             <div class="col-xxl-12 header-img">
                
+
+                <div class="welcome-msg">
+
+                    <h1>WELCOME!</h1>
+                    <h2>New to BINGE?</h2>
+                    <h4>Sign up now!</h4>
+                    
+    
+                    <div class="button-group">
+                        <a href="pages/login-and-register.html"><button class="btn btn-primary">REGISTER</button></a>
+                    </div>
+                    
+                </div>
                 
             </div>
            
@@ -91,17 +121,19 @@
 
     <main>
 
-        <div class="container-fluid">
+        <div class="container-fluid col-12">
 
-            <h1>Check our suggested recommendation for you</h1>
+            <h1 class="movies-header">Check our suggested recommendations for you</h1>
+            <h1 class="mobile-text">OUR RECOMMENDATIONS</h1>
             <hr>
-            <h2>Feel free to scroll through our selection</h2>
+            <h2 class="movies-subheader">Feel free to scroll through our selections</h2>
+            <h2 class="mobile-subtext">Scroll Through our Selections</h2>
 
             <div class="movie-cards row">
                 
             </div> <!--Movie Cards-->
 
-            <div class="register-remind row">
+            <div class="register-remind col-12 row">
                 
                 <h2><strong>Register to view the rest of our website</strong></h2>
                 <button class="btn btn-primary"><a href="pages/login-and-register.html">REGISTER</a></button>
@@ -114,7 +146,7 @@
 
     <footer class="row">
 
-        <div class="col-xxl-4 legal-info">
+        <div class="col-4 legal-info">
             <ul>
                 <li>Privacy Policy</li>
                 <li>About Us</li>
@@ -122,7 +154,7 @@
             </ul>
         </div>
 
-        <div class="col-xxl-4 socials">
+        <div class= "col-4 socials">
             <p style="color: white;">BINGE© | 2021</p>
             <img src="assets/icons/instagram.svg" alt="instagram" height="30px">
             <img src="assets/icons/facebook.svg" alt="facebook" height="30px">
@@ -130,7 +162,7 @@
             <img src="assets/icons/twitter.svg" alt="twitter" height="30px">
         </div>
 
-        <div class="col-xxl-4 contact-info">
+        <div class="col-4 contact-info">
             <ul>
                 <a href="mailto:support@binge.co.za"><li>support@binge.co.za</li></a>
                 <li>+27 64 982 7731</li>
