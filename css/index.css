@@ -1,223 +1,190 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-
-body{
-    background-color: #1D1B27;
-}
-
-
-
-.header{
-    height: 205px;
-}
-
-nav{
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-}
 .logo{
-   margin-top: 4px;
+    text-align: center;
+    padding: 10px;
 }
 
-.hamburger{
-    width: 21px;
-    height: 21px;
-    margin-top: 16px;
-    margin-left: 19px;
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
-.search{
-    margin: 18px
+.profile-group{
+    padding: 20px;
+}
+
+.profile-group p{
+    color: white;
 }
 
 .header-img{
+    height: 366px;
     object-fit: cover;
+    object-position: 100% 0;
+    opacity: 40%;
+    margin-bottom: 44px;
+    background-image: url("https://image.tmdb.org/t/p/original/yO2LFaO62SoM1ZuOq26hWLF1TQ4.jpg");
+}
+
+.welcome-msg{
+    padding: 20px;
+    color: white;
+    width: 559px;
+    background-color: black;
     height: 300px;
-    padding-bottom: 17px;
-    position: absolute;
-    z-index: -1;
-    margin-bottom: 30px;
-}
-
-.sign-up-alert{
-    width: 300px;
-    height: 230px;
-    margin: 0 auto;
+    text-align: center;
     border-radius: 6px;
-    background-image: linear-gradient( to right ,rgba(0,0,0,0.8) , rgba(29,27,39,0.8));
-    padding: 6px;
-    position: relative;
-    top: 51px;
+    position: absolute;
+    top: 160px;
+    left: 700px;
+    z-index: 1;
 }
 
-h1{
-    font-family: 'Fjalla One';
-    color: white;
-    text-align: center;
-    font-size: 48px;
+.welcome-msg h1{
+    font-size: 72px;
 }
 
-h2{
-    font-size: 14px;
-    font-family: 'Cantarell';
-    color: white;
-    text-align: center;
+.welcome-msg h2{
+    font-size: 36px;
 }
 
-h3{
-    font-size: 14px;
-    font-family: 'Cantarell';
-    color: white;
-    text-align: center;
+.welcome-msg h3{
+    font-size: 24px;
 }
 
-h4{
-    color: white;
-    font-family: 'Cantarell';
-    text-align: center;
-
+.btn{
+    margin: 0px 20px ;
+    width: 130px;
+    border-radius: 24px;
+    padding: 10px;
 }
 
-h5{
-    text-align: center;
-    font-family: 'Fjalla One';
-    color: white;
-    font-size: 15px;
+.btn-primary{
+    background-color: #D3418D;
+    border: none; 
 }
 
-hr{
-    margin: 0 auto;
-    width: 200px;
-    border-top: 3px solid #D3418D;
+.btn-primary{
+    background-color: #D3418D;
+    border: none; 
 }
 
-h6{
-    padding-top: 11px;
-    text-align: center;
-    font-family: 'Cantarell';
-    color: white;
-    font-size: 11px;
+.btn-primary:hover{
+    background-color: #D3418D;
+    box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    -webkit-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    -moz-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    transition: 0.3s;
 }
 
-.btn-group{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+.btn-primary:focus{
+    background-color: #D3418D;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: 3px solid #5E1DE8;
+}
+
+.btn-secondary:hover{
+    background-color: #5E1DE8;
+    border: 3px solid #5E1DE8;
 }
 
 button{
-    padding: 8px;
-    border-radius: 30px;
-    width: 120px;
-    font-family: "Fjalla One";
+    font-family: 'Fjalla One';
+    font-size: 20px;
 }
 
-.register-btn{
+.button-group{
+    position: relative;
+    left: 80px;
+    opacity: 100%;
+}
+
+
+.search-bar{
+    height: 50px;
+    width: 250px;
     background-color: #D3418D;
-    border: none;
-    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px; 
 }
 
-.login-btn{
-    border: 3px solid #5E1DE8;
-    background-color: transparent;
-    color: white;
+.search-bar h2{
+    font-family: 'Cantarell';
+    text-align: left;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+hr{
+    width: 800px;
+    border-top: 2px solid #D3418D;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 23px;
+}
+
+.movie{
+    display: inline;
+}
+
+a{
+    text-decoration: none; 
+}
+
+li:hover{
+    text-decoration: 3px underline solid #D3418D;
+    cursor: pointer;
 }
 
 .movie-cards{
-    padding-top: 50px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 50px;
+}
+
+.register-remind button{
     margin: 0 auto;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
-.sub-heading{
-    margin-top: 100px;
-}
-
-.register-reminder{
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.footer{
-    background-color: #605F67;
-    border-radius: 6px 6px 0px 0px;
-    font-family: 'Cantarell';
-    font-size: 11px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-li{
+.legal-info li{
     display: block;
-    margin-right: 20px;
-    color: white;
+    font-size: 14px;
+    font-family: 'Cantarell';
+    margin: 20px;
+    text-align: left;
 }
 
-.social-group{
+.socials{
     text-align: center;
 }
 
-.social-group p{
-    margin-top: 30px;
-    color: white;
+.socials img{
+    margin: 0 auto;
+    margin: 20px;
 }
 
-span{
-    margin: 5px;
+footer{
+    background-color: #5a596b;
+    padding: 10px;
 }
 
-.email-phone{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.to-top{
-    margin-left: 10px;
+.contact-info li{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    display: block;
+    margin: 20px;
+    text-align: right;
 }
 
 
-
-@media only screen and (min-width: 768px){
-
-    .sign-up-alert{
-        width: 700px;
-    }
-
-    .btn-group{
-        display: flex;
-        justify-content: center;
-    }
-
-    .register-btn, .login-btn{
-        margin: 0px 40px;
-    }
-
-    .header-img{
-        position: absolute;
-        bottom: 900px;
-        height: 500px;
-    }
-
-}
 

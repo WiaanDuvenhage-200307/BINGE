@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+
+body{
+    background-color: #1D1B27;
+}
+
+nav{
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.logo{
+    margin-top: 4px;
+ }
+
+.hamburger{
+    width: 21px;
+    height: 21px;
+    margin-top: 16px;
+    margin-left: 19px;
+}
+
+.search{
+    margin: 18px
+}
+
+h1{
+    font-family: 'Fjalla One';
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+h2{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h4{
+    color: white;
+    font-family: 'Cantarell';
+    text-align: center;
+
+}
+
+h5{
+    text-align: center;
+    font-family: 'Fjalla One';
+    color: white;
+    font-size: 15px;
+}
+
+hr{
+    margin: 0 auto;
+    width: 100px;
+    border-top: 3px solid #D3418D;
+}
+
+h6{
+    padding-top: 11px;
+    text-align: center;
+    font-family: 'Cantarell';
+    color: white;
+    font-size: 11px;
+}
+
+.footer{
+    background-color: #605F67;
+    border-radius: 6px 6px 0px 0px;
+    font-family: 'Cantarell';
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+li{
+    display: inline;
+    color: white;
+    font-size: 35px;
+    font-family: "fjalla one";
+    margin: 0px 100px;
+}
+
+.social-group{
+    text-align: center;
+}
+
+.social-group p{
+    margin-top: 30px;
+    color: white;
+}
+
+span{
+    margin: 5px;
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.to-top{
+    margin-left: 10px;
+}

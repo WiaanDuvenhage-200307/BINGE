@@ -24,6 +24,8 @@
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- CSS -->
+
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css"/>
 
     <!-- Fonts -->
@@ -33,133 +35,112 @@
 
 </head>
 <body>
+    
 
-    <!-- API KEY : 2b5c4ad7d6c5ddafd1383a90b3aca91b -->
+    <header>
+        <div class="nav-bar row">
 
-    <div class="container-fluid">
-
-        <div class="col-sm-12 d-lg-none d-md-none  row header"> <!--This is a div only visible on mobile-->
-
-            <nav>
-                <img class="hamburger" src="assets/icons/hamburger.svg" alt="hamburger" width="21px">
-                <div class="logo">
-                    <img class="logo" src="assets/Logo.svg" alt="logo" width="35px">
-                </div>
-                <img class="search" src="assets/icons/search.svg" alt="search" width="18px">
-            </nav>
-
-            <div class="sign-up-alert">
-                <h1>WELCOME!</h1>
-                <h2>Start watching now on BINGE</h2>
-                <h3>But First...</h3>
-                <h4>PLEASE SIGN UP TO OUR WEBSITE</h4>
-                <div class="btn-group">
-                    <button class="register-btn">REGISTER</button>
-                    <h2>OR</h2>
-                    <button class="login-btn">LOG IN</button>
-                </div>
-                
+            <div class="col-xxl-1 logo">
+                <img  src="assets/Logo.svg" alt="logo" height="90px">
             </div>
-           
-            <img  class="header-img" src="https://image.tmdb.org/t/p/w500/xeItgLK9qcafxbd8kYgv7XnMEog.jpg" alt="header" >
             
-            
-            
-                
-        </div> <!--col-sm-12 row header MOBILE ONLY-->
+            <div class="col-xxl-8 nav-items">
 
-       
-
-        <div class="col-sm-12 d-lg-none d-md-none sub-heading row">
-
-            <h5>CHECK OUT OUR MOST POPULAR MOVIES!</h5>
-
-        </div>
-
-        <hr class="col-12 d-lg-none d-md-none ">
-
-        <div class="col-sm-12 d-lg-none d-md-none row">
-
-            <h6>Feel free to scroll through our selection</h6>
-            
-        </div>
-
-        <div class="col-sm-12 d-lg-none d-md-none movie-cards  row">
-            <div class="col-4">
-                <img src="https://image.tmdb.org/t/p/w500/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg" alt="the-flash" height="150px">
-            </div>
-            <div class="col-4">
-                <img src="https://image.tmdb.org/t/p/w500/3WfvjNWr5k1Zzww81b3GWc8KQhb.jpg" alt="the-flash" height="150px">
-            </div>
-            <div class="col-4">
-                <img src="https://image.tmdb.org/t/p/w500/keVNetuagK8nxZQRV0PcBD6SOaK.jpg" alt="the-flash" height="150px">
-            </div>
-        </div> <!--movie cards-->
-
-        <div class="col-12 d-lg-none d-md none register-reminder">
-            <h2>NOT YET SIGNED UP?</h2>
-            <button class="register-btn">REGISTER</button>
-        </div>
-
-        <div class="col-12 d-lg-none d-md-none footer">
-
-            <div class="col-4">
                 <ul>
-                    <li>Privacy Policy</li>
-                    <li>About Us</li>
-                    <li>Terms of Use</li>
+                    <a href="#"><li style="color: #D3418D;">HOME</li></a>
+                    <a href="pages/movie-library.html"><li>LIBRARY</li></a>
+                    <li>ABOUT</li>
+                    <a href="pages/watch-later.html"><li>BINGE LIST</li></a>
                 </ul>
+
             </div>
 
-            <div class="col-4 social-group">
-                <span><img src="assets/icons/facebook.svg" alt="facebook" width="14px"></span>
-                <span><img src="assets/icons/twitter.svg" alt="facebook" width="14px"></span>
-                <span><img src="assets/icons/instagram.svg" alt="facebook" width="14px"></span>
-                <span><img src="assets/icons/youtube.svg" alt="facebook" width="14px"></span>
-                <p>BINGE© | 2021</p>
+            <div class="col-xxl-1 profile-group">
+                <a href="pages/login-and-register.html"></a><img class="profile-icon" src="assets/icons/account.svg" alt="icon" height="48px">
+                <p>Account</p>
             </div>
 
-            <div class="col-4 email-phone">
-                <span><img src="assets/icons/phone.svg" alt="phone" width="14px"></span>
-                <span><img src="assets/icons/email.svg" alt="phone" width="14px"></span>
-                <span class="to-top"><img src="assets/icons/to-top.svg" alt="to-top" width="30px"></span>
+            <div class="col-xxl-2 search-bar">
+                <h2>Search...</h2>
             </div>
 
-            
+            <div class="welcome-msg">
 
-
-
-        </div> <!--Mobile Footer-->
-
-        <div class="d-none d-md-block d-lg-block d-xl-none row header"> <!--Home Page for Only Tablet-->
-
-            <nav>
-                
-                <div class="logo">
-                    <img class="logo" src="assets/Logo.svg" alt="logo" width="35px">
-                </div>
-                <img class="hamburger" src="assets/icons/hamburger.svg" alt="hamburger" width="21px">
-                <img class="search" src="assets/icons/search.svg" alt="search" width="18px">
-            </nav>
-
-            <div class="sign-up-alert">
                 <h1>WELCOME!</h1>
-                <h2>Start watching now on BINGE</h2>
-                <h3>But First...</h3>
-                <h4>PLEASE SIGN UP TO OUR WEBSITE</h4>
-                <div class="btn-group">
-                    <button class="register-btn">REGISTER</button>
-                    <h2>OR</h2>
-                    <button class="login-btn">LOG IN</button>
+                <h2>Start watching on BINGE now</h2>
+                <h3>But first...</h3>
+                <h4><strong>PLEASE SIGN UP TO OUR WEBSITE</strong></h4>
+
+                <div class="button-group">
+                    <a href="pages/login-and-register.html"><button class="btn btn-primary" style="float:left">REGISTER</button></a>
+                    <p style="float: left;">Or</p>
+                    <button class="btn btn-secondary"style="float:left">LOG IN</button>
                 </div>
+                
+            </div>
+            
+            <div class="col-xxl-12 header-img">
+               
                 
             </div>
            
-            <img  class="header-img" src="https://image.tmdb.org/t/p/w500/xeItgLK9qcafxbd8kYgv7XnMEog.jpg" alt="header" >
+          
+        </div>
+        
+    </header> <!--Header content-->
 
-        </div> <!--Tablet Header!-->
+    <main>
 
-    </div> <!--Container Fluid-->
+        <div class="container-fluid">
+
+            <h1>Check our suggested recommendation for you</h1>
+            <hr>
+            <h2>Feel free to scroll through our selection</h2>
+
+            <div class="movie-cards row">
+                
+            </div> <!--Movie Cards-->
+
+            <div class="register-remind row">
+                
+                <h2><strong>Register to view the rest of our website</strong></h2>
+                <button class="btn btn-primary"><a href="pages/login-and-register.html">REGISTER</a></button>
+
+            </div>
+
+        </div> <!--Container Fluid-->
+
+    </main> <!--Main Content-->
+
+    <footer class="row">
+
+        <div class="col-xxl-4 legal-info">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>About Us</li>
+                <li>Terms of Use</li>
+            </ul>
+        </div>
+
+        <div class="col-xxl-4 socials">
+            <p style="color: white;">BINGE© | 2021</p>
+            <img src="assets/icons/instagram.svg" alt="instagram" height="30px">
+            <img src="assets/icons/facebook.svg" alt="facebook" height="30px">
+            <img src="assets/icons/youtube.svg" alt="youtube" height="30px">
+            <img src="assets/icons/twitter.svg" alt="twitter" height="30px">
+        </div>
+
+        <div class="col-xxl-4 contact-info">
+            <ul>
+                <a href="mailto:support@binge.co.za"><li>support@binge.co.za</li></a>
+                <li>+27 64 982 7731</li>
+            </ul>
+        </div>
+        
+
+    </footer> <!--Footer Content-->
+
+    
     
     
     <!-- JS -->
