@@ -19,8 +19,8 @@ $(function(){
             console.log(i.poster_path);
             $(".movie-cards").append(`
 
-                <div class="col-xxl-2 movie">
-                    // <img src=${imagePrefix + i.poster_path} alt="movie_card height="323px" width="100%">
+                <div class="col-xxl-2 col-md-3 col-12 movie">
+                    <img src=${imagePrefix + i.poster_path} alt="movie_card height="323px" width="100%">
                 </div>
 
            `);
@@ -28,18 +28,13 @@ $(function(){
 
     });
 
-    // getting details of movie
+    $(".navbar-toggler").on("click", function(){
+        $(".hamburger-items").slideDown();
+    });
 
     
 
-    const movieDetails = "https://api.themoviedb.org/3/movie/";
-
-    $.getJSON(movieDetails, result =>{
-
-        console.log(result);
-
-    });
-
+   
 
     
 
