@@ -194,18 +194,50 @@ footer{
 
 .hamburger-items{
     display: none;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
 }
 
-/* Desktop @media Query */
-@media only screen and (min-width: 1440px){
-    .hamburger-nav{
-        display: none;
-    }
+
+.hamburger-items li:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #D3418D;
 }
+
+.hamburger-nav{
+    display: none;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.navbar button{
+    margin: 10px;
+}
+
+.navbar{
+    background-color: #323232;
+}
+
+.hamburger-items hr{
+    margin: 10px;
+    border-top: 2px solid #D3418D ;
+    margin-left: -40px;
+}
+
+
+
+
+
 
 
 /* Tablet @media query */
 @media only screen and (max-width: 1024px){
+
+    .hamburger-nav{
+        display: block;
+    }
 
     .nav-bar{
         display: none;
@@ -267,7 +299,9 @@ footer{
 /* Mobile @media query */
 @media only screen and (max-width: 667px){
 
-    
+    .hamburger-nav{
+        display: block;
+    }
 
     .movies{
         margin-right: 0;
@@ -291,6 +325,15 @@ footer{
         display: none;
     }
 
+    .logo{
+        text-align: left;
+        background-color: red;
+        margin-right: 0;
+    }
+
+    .profile-icon{
+        height: 40px;
+    }
 }
 
 
