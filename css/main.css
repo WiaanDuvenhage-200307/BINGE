@@ -34,6 +34,34 @@ nav{
     margin-left: 19px;
 }
 
+.logo{
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.search-bar{
+    height: 50px;
+    width: 250px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.search-bar h2{
+    font-family: 'Cantarell';
+    text-align: left;
+    font-size: 14px;
+}
+
 .search{
     margin: 18px
 }

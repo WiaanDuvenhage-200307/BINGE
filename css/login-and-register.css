@@ -1,237 +1,393 @@
-body{
+body {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 300;
     font-size: 15px;
     line-height: 1.7;
     color: #D3418D;
     background-color: #1C1B27;
-    overflow-x: hidden ;
- }
- 
- a {
-     cursor: pointer;
-     transition: all 200ms linear;
- }
- 
- a:hover{
-     text-decoration: none;
- }
- .link{
-     color: #D3418D;
- }
- .link:hover {
-     color: #5E1DE8;
- }
- input{
-     height: 15%;
-     text-align: left;
- }
- p{
-     font-weight: 500;
-     font-size: 14px;
-     line-height: 1.7;
-     color:  #8f8f8f;
- }
- ::placeholder{
-     color:  #00000042; /*placeholde text for formgroup*/
-      height: 10%; 
- }
- h4{
-     font-weight: 600;
-     
- }
- 
- h6 span{
-     padding: 0 20px;
-     text-transform: uppercase;
-     font-weight: 700;
-     
- }
- 
- .section {
-     position: relative;
-     width: 100%;
-     display: block;
-     
- }
- 
- .full-height{
-     min-height: 100vh;
- }
- [type="checkbox"]:checked,
- [type="checkbox"]:not(:checked){
-     position: absolute;
-     left: -9999px;
- }
- 
- .checkbox:checked + label,
- .checkbox:not(:checked) + label{
-     position: relative;
-     display: block;
-     text-align: center;
-     width: 60px;
-     height: 16px;
-     border-radius: 8px; /**/
-     padding: 0;
-     margin: 10px auto;
-     cursor: pointer;
-     background-color: #766384; /*scroll bar on the top of pg, user to choose login or reg*/
- }
- 
- .checkbox:checked + label:before,
- .checkbox:not( :checked) + label:before{
-     position: absolute;
-     display: block;
-     width: 36px;
-     height: 36px;
-     border-radius: 50%;
-     background-color: #684284 ; /*round circle indicating login or register active form*/
-     font-family: 'Cantarell', sans-serif;
-     content: ''; /*this adds the scroll round button*/ /*thoughts on adding a tiny 'B' inside?*/
-     z-index: 20;
-     top: -10px;
-     left: -10px;
-     line-height: 36px;
-     text-align: center;
-     font-size: 24px;
-     transition: all 0.5s ease;
- 
- }
- 
- .checkbox:checked + label:before { /**/
-     transform: translateX(44px) rotate(-270deg);
- }
- .card-3d-wrap{ /**/
-     position: relative;
-     width: 440px;
-     max-width: 100%;
-     height: 400px;
-     -webkit-transform-style: preserve-3d;
-     transform-style: preserve-3d;
-     perspective: 800px;
-     margin-top: 60px;
- }
- 
- .card-3d-wrapper{ /**/
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top: 0;
-     left: 0;
-     -webkit-transform-style: preserve-3d;
-     transform-style: preserve-3d;
-     transition: all 600ms ease-out;
- }
- 
- .card-front, .card-back { /*both the cards, colour, style, bg image thats faded, depending on which side is facing the user, make the other side hidden*/
-     width: 100%;
-     height: 100%;
-     background-color: #2a2b38;
-     background-image: url('/img/logreg-gradfree-bg.svg');
-     background-position:  center;
-     background-repeat: no-repeat;
-     background-size:  150%;
-     position: absolute;
-     border-radius: 6px;
-     left: 0;
-     top: 0;
-     -webkit-transform-style: preserve-3d;
-     transform-style: preserve-3d;
-     -webkit-backface-visibility: hidden;
-     -moz-backface-visibility: hidden;
-     -o-backface-visibility: hidden;
-     backface-visibility: hidden;
-     text-align: left;
- }
- .card-back{
-     transform: rotateY(180deg);
- }
- .checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
-     transform: rotateY(180deg);
- }
- .center-wrap{
-     position:absolute;
-     width: 100%;
-     padding: 0 35px;
-     top: 50%;
-     left: 0;
-     transform: translate3d(0,-50%, 35px) perspective(100px);
-     z-index: 20; /*space between text and card to give it the 3d feel effect*/
-     display: block;
- 
- }
- 
- .form-group { /*register-and-login container style*/
-     position: relative; /*relative from center-wrap:absolute*/
-     display: block;
-     margin: 0;
-     padding: 0;
-     
- 
- }
- .logemail, .logname, .pswlog{ /*login form style*/
-    height: 10%;
-    margin-top: 20px;
-     width: 100%;  
-       
- } 
- 
- 
- .form-style{ /*register-and-login form style*/
-     padding: 15px 25px; 
-    padding-left: 5px;
-     width: 100%;
-     height: 12%;
-     text-align: left;
- }
- 
- .lastname, .email, .psw, .firstname{ /*register form style*/
-     width: 100%;
-     font-family: 'Cantarell', sans-serif;
-     font:  weight 10px;
-    
-     
- }
- .btn {
-    
-     border-radius: 60px;
-     width: 40%;
-     padding: 0 auto;
- 
- }
- /*.bt*/ .prim{
-     background-color: #D3418D;
-     color: #fff;
-     letter-spacing: 1.7px;
- }
- .login{
-     background-color: #D3418D;
-     color: #fff;
-     letter-spacing: 1.7px;
- }
- /*.bt*/ .sec{
-     background-color:#1D1B27;
-   
-     border-color:   #5E1DE8;
-     color: rgba(255, 255, 255, 0.911);
-     letter-spacing: 1.7px;
- }
- .binge-logo{
-    width: 5%;
+    overflow-x: hidden;
+    margin-top: -20px;
+}
+
+a {
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.link {
+    color: #D3418D;
+}
+
+.link:hover {
+    color: #5E1DE8;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #8f8f8f;
+}
+
+::placeholder {
+    color: #00000042;
+    /*placeholde text for formgroup*/
+    height: 30%;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+h6 span {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d3418c79;
+}
+
+.section {
+    width: 100%;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+[type="checkbox"]:checked, [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox:checked+label, .checkbox:not(:checked)+label {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 16px;
+    border-radius: 8px;
+    /**/
+    padding: 0;
+    margin: 10px auto;
+    cursor: pointer;
+    background-color: #766384;
+    /*scroll bar on the top of pg, user to choose login or reg*/
+}
+
+.checkbox:checked+label:before, .checkbox:not( :checked)+label:before {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #684284;
+    /*round circle indicating login or register active form*/
+    font-family: 'Cantarell', sans-serif;
+    content: '';
+    /*this adds the scroll round button*/
+    /*thoughts on adding a tiny 'B' inside?*/
+    z-index: 20;
+    top: -10px;
+    left: -10px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+
+.checkbox:checked+label:before {
+    /**/
+    transform: translateX(44px) rotate(-270deg);
+}
+
+.card-3d-wrap {
+    /**/
+    position: relative;
+    width: 40%;
+    max-width: 100%;
+    height: 530px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective: 1200px;
+    margin-top: 70px;
+}
+
+.card-3d-wrapper {
+    /**/
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 600ms ease-out;
+}
+
+.card-front, .card-back {
+    /*both the cards, colour, style, bg image thats faded, depending on which side is facing the user, make the other side hidden*/
+    width: 100%;
+    height: 90%;
+    background-color: #2a2b38;
+    background-image: url('/img/logreg-gradfree-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    position: absolute;
+    border-radius: 6px;
+    left: 0;
+    top: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: left;
+}
+
+.card-back {
+    /*login side*/
+    transform: rotateY(180deg);
+}
+
+.checkbox:checked~.card-3d-wrap .card-3d-wrapper {
+    transform: rotateY(180deg);
+}
+
+.center-wrap {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    /*perspective was interesting to learn about*/
+    z-index: 20;
+    /*walks hand-in-hand with perspective in this rule-set*/
+    /*space between text and card to give it the 3d feel effect*/
+    display: block;
+}
+
+.form-group {
+    /*register-and-login container style*/
+    /*relative from center-wrap:absolute*/
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 1;
+}
+
+.form-style {
+    /*register-and-login form style*/
+    width: 100%;
+    height: 12%;
+    text-align: left;
+}
+
+.lastname, .email, .psw, .firstname {
+    /* card front/register side */
+    /*register form style*/
+    width: 90%;
+    margin: 12px 12px 12px 1px;
+    font-family: 'Cantarell', sans-serif;
+}
+
+.btn {
+    border-radius: 60px;
+    width: 40%;
+}
+
+/*.bt*/
+
+.prim {
+    /* primary button */
+    background-color: #D3418D;
+    color: #fff;
+    letter-spacing: 1.7px;
+}
+
+.prim:hover {
+    background-color: #D3418D;
+    box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    -webkit-box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    -moz-box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    transition: 0.3s;
+}
+
+.prim:focus {
+    background-color: #D3418D;
+}
+
+.sec {
+    background-color: transparent;
+    border: 3px solid #5E1DE8;
+}
+
+.sec:hover {
+    background-color: #5E1DE8;
+    border: 3px solid #5E1DE8;
+}
+
+.sec {
+    /* secondary button */
+    background-color: #1D1B27;
+    border-color: #5E1DE8;
+    color: rgba(255, 255, 255, 0.911);
+    letter-spacing: 1.7px;
+}
+
+/*.bt*/
+
+.binge-logo {
+    width: 70px;
     margin-bottom: 5%;
-     position: relative;
- }
+    position: relative;
+}
 
- @media only screen and (max-width:667px) {
-    .heading {
-        font-weight: 900;
-        font-size: 72px;
-    }
- }
+.logname, .logemail, .pswlog {
+    /* card back/login */
+    height: 70px;
+    width: 90%;
+    margin: 12px 12px 12px 1px;
+    font-family: 'Cantarell', sans-serif;
+    color: #8f8f8f;
+}
 
- @media only screen and (max-width:1024px) {
-    .heading {
+input {
+    /* form inputs */
+    height: 80px;
+    border-radius: 16px;
+    border: none
+}
+
+/*  @ MEDIA QUERIES STARTS HERE \/ */
+
+/* iPhone 8 Plus */
+
+@media only screen and (max-width:414px) {
+    h4 {
         font-weight: 900;
-        font-size: 72px;
+        font-size: 50px;
     }
- }
+    h6 {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .lastname, .email, .psw, .firstname {
+        /*register form style*/
+        width: 100%;
+        height: 50px;
+    }
+    .logname, .logemail, .pswlog {
+        width: 90%;
+    }
+    .formgroup {
+        margin-top: -5%;
+    }
+    .binge-logo {
+        width: 90px;
+        margin-top: 5%;
+    }
+    .section {
+        margin-top: -9%;
+    }
+    .card-3d-wrap .mx-auto {
+        height: 10%;
+        margin-top: -15%;
+    }
+    .card-3d-wrapper {
+        /**/
+        margin-top: -50px;
+    }
+}
+
+/*IPAD*/
+
+@media only screen and (max-width:1024px) {
+    h4 {
+        font-weight: 400;
+        font-size: 90px;
+    }
+    .section {
+        margin-top: -55px;
+    }
+    .card-3d-wrap {
+        width: 100%;
+        max-width: 100%;
+    }
+    .card-3d-wrapper {
+        /**/
+        width: 900px;
+        height: 40%;
+    }
+    .binge-logo {
+        width: 20%;
+    }
+    .card-front, .card-back {
+        height: 700px;
+    }
+    input {
+        width: 100%;
+    }
+    .lastname, .email, .psw, .firstname {
+        /*register form style*/
+        width: 100%;
+        height: 80px;
+    }
+    .logname, .logemail, .pswlog {
+        height: 100px;
+        width: 90%;
+    }
+    .prim {
+        height: 300px;
+    }
+}
+
+/*Laptop/Desktop*/
+
+@media only screen and (max-width:1440px) {
+    h4 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+    .card-3d-wrapper {
+        /**/
+        width: 100%;
+    }
+    .binge-logo {
+        width: 10%;
+    }
+    h6 span {
+        font-size: 24px;
+    }
+    .btn, .prim, .sec {
+        width: 35%;
+        height: 5%;
+        color: rgba(255, 255, 255, 0.911);
+        letter-spacing: 1.7px;
+    }
+    .binge-logo {
+        width: 5%;
+        margin-bottom: 5%;
+        position: relative;
+    }
+    @media only screen and (max-width:667px) {
+        .heading {
+            font-weight: 900;
+            font-size: 72px;
+        }
+    }
+    @media only screen and (max-width:1024px) {
+        .heading {
+            font-weight: 900;
+            font-size: 72px;
+        }
+    }
+}
+
+;
