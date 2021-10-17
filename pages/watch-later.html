@@ -18,9 +18,11 @@
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/main.css"/>
+
     <link rel="stylesheet" href="../css/watch-later.css"/>
 
     <!-- Fonts -->
@@ -31,39 +33,41 @@
 </head>
 <body>
 
-    <div class="nav-bar row">
+    <div class="nav-bar watchlater row">
 
-        <div class="col-xxl-1 logo">
-            <img  src="../assets/Logo.svg" alt="logo" height="90px">
+        <div class="col-md-1 col-lg-1 col-xxl-1 logo navSection">
+            <a href="../index.html"><img  src="../assets/Logo.svg" alt="logo" height="90px"></a>
         </div>
         
-        <div class="col-xxl-8 nav-items">
-
-            <ul>
-                <a href="../index.html"><li>HOME</li></a>
-                <a href="../pages/movie-library.html"><li>LIBRARY</li></a>
-                <li>ABOUT</li>
-                <a href="../pages/watch-later.html"><li>BINGE LIST</li></a>
-            </ul>
-
+                <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="../index.html"><h7>HOME</h7></a></div>
+                <div class="col-md-2 col-lg-1 col-xxl-2 navSection navSectionTxt"><a href="/pages/movie-library.html"><h7>LIBRARY</h7></a></div>
+                <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="/pages/about.html"><h7>ABOUT</h7></a></div>
+                <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="/pages/watch-later.html"><h7 style="color: #D3418D;">BINGE LATER</h7></a></div>
+            
+        <div class="col-md-1 col-lg-1 col-xxl-1 profile-group navSection navSectionIcon">
+            <img class="profile-icon" src="../assets/icons/account.svg" alt="icon" height="48px">
+            <p style="color: white; text-align: center;">Account</p>
         </div>
 
-        <div class="col-xxl-1 profile-group">
-            <a href="../pages/login-and-register.html"></a><img class="profile-icon" src="../assets/icons/account.svg" alt="icon" height="48px">
-            <p>Account</p>
-        </div>
-
-        <div class="col-xxl-2 search-bar">
+        <div class="col-md-2 col-lg-2 col-xxl-2 search-bar navSection navSectionSrch">
             <h2>Search...</h2>
+            <img src="../assets/icons/search.svg" alt="surch" style="width: 40px; float: right; margin-top: -40px;">
         </div>
 
     </div> <!--Nav Bar for Desktop-->
+
+    <div class="container-fluid">
+
+        <div class="binge-item row" style="padding: 10%; text-align: left;">
+        </div>
+
+
+    </div>
     
 
     
-    <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    
     <!-- JS -->
-    <script src="../js/index.js"></script>
+    <script src="../js/watch-later.js"></script>
 </body>
 </html>

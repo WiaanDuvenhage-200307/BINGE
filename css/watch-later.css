@@ -1,0 +1,128 @@
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #1D1B27;
+}
+
+.search-bar{
+    height: 50px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    margin-top: 20px; 
+}
+
+
+.logo{
+    margin-top: 4px;
+ }
+
+.hamburger{
+    width: 21px;
+    height: 21px;
+    margin-top: 16px;
+    margin-left: 19px;
+}
+
+.logo{
+    text-align: center;
+    padding: 10px;
+}
+
+.search-bar{
+    height: 50px;
+    background-color: #D3418D;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.search-bar h2{
+    font-family: 'Cantarell';
+    text-align: left;
+    font-size: 14px;
+}
+
+
+
+h7{ 
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+}
+
+h1{
+    font-family: 'Fjalla One';
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+h2{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-size: 36px;
+    font-family: 'Cantarell';
+    color: white;
+    text-align: center;
+}
+
+h4{
+    color: white;
+    font-family: 'Cantarell';
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Fjalla One';
+    color: white;
+    font-size: 15px;
+}
+
+hr{
+    margin: 0 auto;
+    width: 100px;
+    border-top: 3px solid #D3418D;
+}
+
+h6{
+    padding-top: 11px;
+    text-align: center;
+    font-family: 'Cantarell';
+    color: white;
+    font-size: 11px;
+}
+
+.navSection {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navSectionTxt {
+    margin-top: 40px;
+}
+
+.navSectionTxt :hover {
+    color: #D3418D;
+}
+
+.navSectionIcon {
+    margin-top: 20px;
+}
+
+.navSectionSrch {
+    margin-top: 30px;
+
+}
+.watchlater {
+    padding:2%;
+}
