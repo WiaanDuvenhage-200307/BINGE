@@ -234,6 +234,10 @@ footer{
         display: none;
     }
 
+    .contact-info img{
+        display: none;
+    }
+
 
     .binge-later{
         display: none;
@@ -307,7 +311,7 @@ footer{
 
     .contact-info img{
         position: relative;
-        top: 30px;
+        top: 0px;
         margin-bottom:20px ;
     }
 
