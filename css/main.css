@@ -66,6 +66,12 @@ nav{
     margin: 18px
 }
 
+h7 { 
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+}
+
 h1{
     font-family: 'Fjalla One';
     color: white;
