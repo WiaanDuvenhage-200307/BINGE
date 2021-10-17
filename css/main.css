@@ -25,41 +25,13 @@ nav{
 
 .logo{
     margin-top: 4px;
- }
+}
 
 .hamburger{
     width: 21px;
     height: 21px;
     margin-top: 16px;
     margin-left: 19px;
-}
-
-.logo{
-    text-align: center;
-    padding: 10px;
-}
-
-.nav-items{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-}
-
-.search-bar{
-    height: 50px;
-    width: 250px;
-    background-color: #D3418D;
-    border-radius: 30px;
-    padding: 20px;
-    margin-top: 20px; 
-}
-
-.search-bar h2{
-    font-family: 'Cantarell';
-    text-align: left;
-    font-size: 14px;
 }
 
 .search{
@@ -191,29 +163,4 @@ footer{
     display: block;
     margin: 20px;
     text-align: right;
-}
-
-.btn {
-    
-    border-radius: 60px;
-    width: 40%;
-    padding: 0 auto;
-
-}
-/*.bt*/ .prim{
-    background-color: #D3418D;
-    color: #fff;
-    letter-spacing: 1.7px;
-}
-.login{
-    background-color: #D3418D;
-    color: #fff;
-    letter-spacing: 1.7px;
-}
-/*.bt*/ .sec{
-    background-color:#1D1B27;
-  
-    border-color:   #5E1DE8;
-    color: rgba(255, 255, 255, 0.911);
-    letter-spacing: 1.7px;
 }
