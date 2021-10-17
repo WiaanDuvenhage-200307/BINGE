@@ -23,20 +23,24 @@
     height: 366px;
     object-fit: cover;
     object-position: 100% 0;
-    opacity: 40%;
+    opacity: 100%;
     margin-bottom: 44px;
     padding: 20px;
-    background-image: url("https://image.tmdb.org/t/p/original/yO2LFaO62SoM1ZuOq26hWLF1TQ4.jpg");
+    background-image: url("/assets/HomeHeader.jpg");
+    background-size: cover;
+   
 }
 
 .welcome-msg{
     padding: 20px;
     color: white;
     width: 559px;
-    background-color: black;
+    background-color: transparent;
     height: 300px;
     margin: 0 auto;
     border-radius: 6px;
+    position: relative;
+    z-index: 999;
 }
 
 .welcome-msg h1{
