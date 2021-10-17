@@ -1,3 +1,4 @@
+<!-- Wiaan Duvenhage #200307 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +17,13 @@
 
     <title>BINGE©</title>
 
-    <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery & Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/individual-movie.css"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,10 +33,284 @@
 </head>
 <body>
 
+    <header>
+
+        <!-- <div class="hamburger-nav">
+
+            <div class="navbar navbar-dark">
+                
+                <button class="navbar-toggler col-3" type="button" data-bs-toggle="collapse" data-bs-target=".hamburger-items" aria-controls= "hamburger-items" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
+            
+                <div class="col-3 logo ">
+                    <img class="binge-logo" src="/img/binge-logo-sm.svg" alt="logo" height="70px">
+                </div>
+
+                <div class="col-3 profile-group">
+                    <a href="pages/login-and-register.html"></a><img class="profile-icon" src="assets/icons/account.svg" alt="icon" height="70px" >
+                </div>
+
+                <img class="col-3 search" src="assets/icons/search.svg" alt="search" height="30px" height="70px">
     
-    <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+            </div>
+
+            <div class="hamburger-items">
+
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <hr>
+                    <a href="pages/movie-library.html"><li>LIBRARY</li></a>
+                    <hr>
+                    <li>ABOUT</li>
+                    <hr>
+                    <a href="pages/watch-later.html"><li>BINGE LATER</li></a>
+                </ul>
+
+            </div>
+
+            
+
+        </div> -->
+        
+
+        <div class="nav-bar row">
+
+            <div class="col-xxl-1 logo">
+                <img  src="../assets/Logo.svg" alt="logo" height="90px">
+            </div>
+            
+            <div class="col-xxl-8 nav-items">
+
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="../pages/movie-library.html"><li>LIBRARY</li></a>
+                    <li>ABOUT</li>
+                    <a href="../pages/watch-later.html"><li>BINGE LIST</li></a>
+                </ul>
+
+            </div>
+
+            <div class="col-xxl-1 profile-group">
+                <a href="../pages/login-and-register.html"></a><img class="profile-icon" src="../assets/icons/account.svg" alt="icon" height="48px">
+                <p>Account</p>
+            </div>
+
+            <div class="col-xxl-2 search-bar">
+                <h2>Search...</h2>
+            </div>
+
+        </div> <!--Nav Bar for Desktop-->
+        
+    </header> <!--Header content-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 movie-img">
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-6 movie-details">
+
+                <h1>VENOM</h1>
+                <h2>Crime | Drama</h2>
+                <h2>2017</h2>
+                <div class="rating">
+                    <img src="../assets/icons/rating.svg" alt="rating" height="50px">
+                    <h2>Rating: 2.7</h2>
+                </div>
+                
+            </div>
+
+            <div class="col-6 extra-info">
+
+                <div class="row">
+
+                    <div class="col-2 pink-block director">
+                        <img src="../assets/icons/director.svg" alt="" height="40px">
+                        <h1>Creator</h1>
+                        <h2>Danny Williams</h2>
+    
+                    </div>
+    
+                    <div class="col-2 pink-block director">
+    
+                        <img src="../assets/icons/runtime.svg" alt="" height="40px">
+                        <h1>Runtime</h1>
+                        <h2>56 mins.</h2>
+                        
+                    </div>
+    
+                    <div class="col-2 pink-block director">
+    
+                        <img src="../assets/icons/accessibility.svg" alt="" height="40px">
+                        <h1>Accessibility</h1>
+                        <h2>16+</h2>
+                        
+                    </div>  
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="body-text col-6">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis molestias reprehenderit aspernatur exercitationem rem ex tempora pariatur minima quaerat quod praesentium autem molestiae nam nostrum delectus, sapiente placeat alias. Animi?</h3>
+            </div>
+
+            <div class="binge-later-button col-6">
+                <button class="watch-later-btn"><h1>BINGE LATER</h1></button>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 cast-header">
+                <h1><u>ABOUT THE CAST</u></h1>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-6 cast-left">
+                <div class="row">
+
+                    <div class="col-3 cast-img">
+                        <img src="https://www.artmajeur.com/medias/standard/r/a/raffaella-carrera/artwork/11011291_50x50.jpg" alt="" width="200px">
+                    </div>
+                    <div class="col-3 cast-details">
+                        <h3>Cassio Del Ray</h3>
+                        <p>Casted as: Jessica</p>
+                        <p>Age: 27</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="col-6 cast-left">
+                <div class="row">
+
+                    <div class="col-3 cast-img">
+                        <img src="https://www.artmajeur.com/medias/standard/r/a/raffaella-carrera/artwork/11011291_50x50.jpg" alt="" width="200px">
+                    </div>
+                    <div class="col-3 cast-details">
+                        <h3>Cassio Del Ray</h3>
+                        <p>Casted as: Jessica</p>
+                        <p>Age: 27</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="col-6 cast-left">
+                <div class="row">
+
+                    <div class="col-3 cast-img">
+                        <img src="https://www.artmajeur.com/medias/standard/r/a/raffaella-carrera/artwork/11011291_50x50.jpg" alt="" width="200px">
+                    </div>
+                    <div class="col-3 cast-details">
+                        <h3>Cassio Del Ray</h3>
+                        <p>Casted as: Jessica</p>
+                        <p>Age: 27</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="col-6 cast-left">
+                <div class="row">
+
+                    <div class="col-3 cast-img">
+                        <img src="https://www.artmajeur.com/medias/standard/r/a/raffaella-carrera/artwork/11011291_50x50.jpg" alt="" width="200px">
+                    </div>
+                    <div class="col-3 cast-details">
+                        <h3>Cassio Del Ray</h3>
+                        <p>Casted as: Jessica</p>
+                        <p>Age: 27</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="col-6 cast-left">
+                <div class="row">
+
+                    <div class="col-3 cast-img">
+                        <img src="https://www.artmajeur.com/medias/standard/r/a/raffaella-carrera/artwork/11011291_50x50.jpg" alt="" width="200px">
+                    </div>
+                    <div class="col-3 cast-details">
+                        <h3>Cassio Del Ray</h3>
+                        <p>Casted as: Jessica</p>
+                        <p>Age: 27</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="col-6 cast-left">
+                <div class="row">
+
+                    <div class="col-3 cast-img">
+                        <img src="https://www.artmajeur.com/medias/standard/r/a/raffaella-carrera/artwork/11011291_50x50.jpg" alt="" width="200px">
+                    </div>
+                    <div class="col-3 cast-details">
+                        <h3>Cassio Del Ray</h3>
+                        <p>Casted as: Jessica</p>
+                        <p>Age: 27</p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+
+    <footer class="row">
+
+        <div class="col-4 legal-info">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>About Us</li>
+                <li>Terms of Use</li>
+            </ul>
+        </div>
+
+        <div class= "col-4 socials">
+            <p style="color: white;">BINGE© | 2021</p>
+            <img src="../assets/icons/instagram.svg" alt="instagram" height="30px">
+            <img src="../assets/icons/facebook.svg" alt="facebook" height="30px">
+            <img src="../assets/icons/youtube.svg" alt="youtube" height="30px">
+            <img src="../assets/icons/twitter.svg" alt="twitter" height="30px">
+        </div>
+
+        <div class="col-4 contact-info">
+            <ul>
+                <a href="mailto:support@binge.co.za"><li>support@binge.co.za</li></a>
+                <li>+27 64 982 7731</li>
+            </ul>
+        </div>
+        
+
+    </footer> <!--Footer Content-->
+
     <!-- JS -->
-    <script src="../js/index.js"></script>
+    <script src="../js/individual-movie.js"></script>
 </body>
 </html>
