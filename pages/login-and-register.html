@@ -26,7 +26,7 @@
     <script src="../js/login-and-register.js"></script>
     <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- jQuery CDN -->
-    <link rel="stylesheet" href="../css/index.css" /><!-- CSS -->
+   
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!--iconscout link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,36 +50,40 @@
             <div class="row full-height justify-content-center">
                 <div class="col-sm-12 text-center align-self-center py-5">
                     <div class="section pb-5 pt-5 pt-sm-2 text-center">
-                        <img src="/img/binge-logo-sm.svg" class="binge-logo">
+
+                        <a href="../index.html"><img src="/img/binge-logo-sm.svg" class="binge-logo"></a>
+                        
                         <h6 class="md-0 pb-3">
-                            <span>REGISTER</span>
-                            <span>LOG IN</span>
+                            <span class="regSpan">REGISTER</span>
+                            <span class="logSpan">LOG IN</span>
                         </h6>
                         <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
                         <label for="reg-log"></label>
 
-                        <div class="card-3d-wrap mx-auto">
+                        <div class="col-md-6 col-lg-6 card-3d-wrap mx-auto">
                             <div class="card-3d-wrapper">
                                 <div class="card-front">
                                     <div class="center-wrap">
                                         <div class="section text-center">
-                                            <h4 class="mb-4 pb-3">REGISTER</h4>
+                                            <!-- <h4 class="pb-3">REGISTER</h4> -->
                                             <div class="form-group">
                                                 <input class="firstname" type="text" placeholder="First Name" id="fname" name="fname"
-                                                    style="margin-bottom: 4%;" required><br>
+                                                     required><br>
 
                                                 <input class="lastname" type="text" placeholder="Last Name" id="lname" name="lname"
-                                                style="margin-bottom: 4%;" required><br>
+                                                 required><br>
                                                 <input class="email" type="email" placeholder="Your Email" id="email"
-                                                    name="email"  style="margin-bottom: 4%;" required><br>
+                                                    name="email"   required><br>
                                                 <input class="psw" type="password" placeholder="Password"
                                                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                                     title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
                                                     required><br>
                                                 <!-- This code says the input needed = password with digit, lower and uppercase 8+ characters long -->
                                                 <!--Form Name Email Password Input Fields-->
-                                                <a href="#" class="btn prim mt-4">SUBMIT</a>
-                                                <a href="#" class="btn sec mt-4">CANCEL</a>
+                                                <a href="../index.html" class="btn prim mt-4" style="padding-block: 3px;">SUBMIT</a>
+                                                <div class="message"></div>
+                                                <a href="#" class="btn sec mt-4" style="padding-block: 3px;">CANCEL</a>
+                                                <div class="message"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -88,23 +92,25 @@
                                 <div class="card-back">
                                     <div class="center-wrap">
                                         <div class="section text-center">
-                                            <h4 class="md-4 pb-3">LOG IN</h4>
-                                            <div class="form-group">
-                                              
-                                            <div class="form-group mt-2">
-                                                <input type="text" name="logname" class="form-style logname" placeholder="Full Name" id="logname" autocomplete="off" autofocus style="margin-bottom: 8px;">
-                                                <input class="form-style logemail" type="email" placeholder="Your Email" id="email"
-                                                    name="email" style="margin-bottom: 6px;" required>
+                                            <!-- <h4 class="md-4 pb-3">LOG IN</h4> -->
+                                            <form>
+                                                <div class="form-group">
+                                                
+                                                <div class="form-group mt-2">
+                                                    <input type="text" name="logname" class="form-style logname" placeholder="Full Name" id="logname" autocomplete="off" autofocus ><br>
+                                                    <input class="form-style logemail" type="email" placeholder="Your Email" id="email"
+                                                        name="email" required><br>
 
-                                                <input class="form-style pswlog" type="password" placeholder="Your Password"
-                                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                                    title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
-                                                    required name="logpass">
-                                            </div>
-                                           
+                                                    <input class="form-style pswlog" type="password" placeholder="Your Password"
+                                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                                        title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
+                                                        required name="logpass">
+                                                </div>
+                                            </form>
                                         </div>
-                                            <a href="#" class="btn mt-4 login">SUBMIT</a>
+                                            <a href="../index.html" class="btn mt-4 prim">SUBMIT</a>
                                         </div>
+                                        <div class="message"></div>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +154,7 @@
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
     <!-- JS -->
-    <script src="../js/index.js"></script>
+    <script src="../js/login-and-register.js"></script>
 </body>
    
 
