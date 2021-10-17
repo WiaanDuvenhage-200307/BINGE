@@ -53,7 +53,7 @@
 }
 
 .btn{
-    margin: 0px 20px ;
+    margin: 0px 20px auto;
     width: 130px;
     border-radius: 24px;
     padding: 10px;
@@ -63,11 +63,6 @@
 .btn-primary{
     background-color: #D3418D;
     border: none;
-}
-
-.btn-primary{
-    background-color: #D3418D;
-    border: none; 
 }
 
 .btn-primary:hover{
@@ -154,6 +149,10 @@ li:hover{
     margin-bottom: 50px;
 }
 
+.register-remind{
+   text-align: center;
+}
+
 .legal-info li{
     display: block;
     font-size: 14px;
@@ -194,18 +193,64 @@ footer{
 
 .hamburger-items{
     display: none;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
 }
 
-/* Desktop @media Query */
+
+.hamburger-items li:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #D3418D;
+}
+
+.hamburger-nav{
+    display: none;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.navbar button{
+    margin: 10px;
+}
+
+.navbar{
+    background-color: #5a596b;
+}
+
+.hamburger-items hr{
+    margin: 10px;
+    border-top: 2px solid #D3418D ;
+    margin-left: -40px;
+    width: 100%;
+}
+
+.movie-details{
+    height: 50%;
+    background-color: black;
+
+}
+
+
+
+
+
 @media only screen and (min-width: 1440px){
     .hamburger-nav{
         display: none;
     }
+
+    
 }
 
 
 /* Tablet @media query */
 @media only screen and (max-width: 1024px){
+
+    .hamburger-nav{
+        display: block;
+    }
 
     .nav-bar{
         display: none;
@@ -260,14 +305,10 @@ footer{
     .movie{
         margin-bottom: 20px;
     }
-    
 
-}
-
-/* Mobile @media query */
-@media only screen and (max-width: 667px){
-
-    
+    .hamburger-nav{
+        display: block;
+    }
 
     .movies{
         margin-right: 0;
@@ -291,6 +332,77 @@ footer{
         display: none;
     }
 
+    .logo{
+        margin: 0 ;
+        margin-right: 0;
+        
+    }
+
+    .profile-icon{
+        height: 30px;
+        width: 30px;
+    }
+
+    .profile-group{
+        text-align: right;
+    }
+
+    .search{
+        width: 30px;
+    }
+    
+
+}
+
+/* Mobile @media query */
+@media only screen and (max-width: 667px){
+
+    .hamburger-nav{
+        display: block;
+    }
+
+    .movies{
+        margin-right: 0;
+    }
+
+    .movies-header{
+        display: none;
+    }
+
+    .mobile-text{
+        display: block;
+        font-size: 24px;
+        color: white;
+    }
+
+    .mobile-subtext{
+        display: block;
+    }
+
+    .movies-subheader{
+        display: none;
+    }
+
+    .logo{
+        margin: 0 ;
+        margin-right: 0;
+        
+    }
+
+    .profile-icon{
+        height: 30px;
+        width: 30px;
+    }
+
+    .profile-group{
+        text-align: right;
+    }
+
+    .search{
+        width: 30px;
+    }
+
+    
 }
 
 

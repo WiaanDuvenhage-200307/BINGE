@@ -18,8 +18,8 @@ $(function(){
             console.log(i.poster_path);
             $(".movie-cards").append(`
 
-                <div class="col-xxl-2 movie">
-                    <br> <a href="/pages/individual-movie.html"><img class="card" src=${imagePrefix + i.poster_path} alt="movie_card height="323px" width="100%"></a>
+                <div class="col-xxs-6 col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xxl-2 movie">
+                    <br> <a href="/pages/individual-movie.html"><img class="card" src=${imagePrefix + i.poster_path} alt="movie_card height="20%" width="100%"></a>
                 </div>
 
            `);

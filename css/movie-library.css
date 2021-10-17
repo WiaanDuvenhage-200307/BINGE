@@ -90,6 +90,7 @@ li{
     background-color: #131313;
     margin: 5px 2.5px;
     color: white;
+    height: 50px;
   }
   .filter-button:hover {
     cursor: pointer;

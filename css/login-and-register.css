@@ -150,7 +150,8 @@ h6 span {
     text-align: left;
 }
 
-.card-back {    /*login side*/
+.card-back {
+    /*login side*/
     transform: rotateY(180deg);
 }
 
@@ -164,8 +165,10 @@ h6 span {
     padding: 0 35px;
     top: 50%;
     left: 0;
-    transform: translate3d(0, -50%, 35px) perspective(100px);    /*perspective was interesting to learn about*/
-    z-index: 20;    /*walks hand-in-hand with perspective in this rule-set*/
+    transform: translate3d(0, -50%, 35px) perspective(100px);
+    /*perspective was interesting to learn about*/
+    z-index: 20;
+    /*walks hand-in-hand with perspective in this rule-set*/
     /*space between text and card to give it the 3d feel effect*/
     display: block;
 }
@@ -207,26 +210,29 @@ h6 span {
     color: #fff;
     letter-spacing: 1.7px;
 }
-.prim:hover{
+
+.prim:hover {
     background-color: #D3418D;
-    box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
-    -webkit-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
-    -moz-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    -webkit-box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    -moz-box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
     transition: 0.3s;
 }
-.prim:focus{
+
+.prim:focus {
     background-color: #D3418D;
 }
 
-.sec{
+.sec {
     background-color: transparent;
     border: 3px solid #5E1DE8;
 }
 
-.sec:hover{
+.sec:hover {
     background-color: #5E1DE8;
     border: 3px solid #5E1DE8;
 }
+
 .sec {
     /* secondary button */
     background-color: #1D1B27;
@@ -236,8 +242,6 @@ h6 span {
 }
 
 /*.bt*/
-
-
 
 .binge-logo {
     width: 70px;
@@ -323,7 +327,6 @@ input {
     }
     .binge-logo {
         width: 20%;
-       
     }
     .card-front, .card-back {
         height: 700px;
@@ -340,7 +343,6 @@ input {
         height: 100px;
         width: 90%;
     }
-   
     .prim {
         height: 300px;
     }
@@ -356,11 +358,9 @@ input {
     .card-3d-wrapper {
         /**/
         width: 100%;
-       
     }
     .binge-logo {
         width: 10%;
-    
     }
     h6 span {
         font-size: 24px;
@@ -368,5 +368,26 @@ input {
     .btn, .prim, .sec {
         width: 35%;
         height: 5%;
+        color: rgba(255, 255, 255, 0.911);
+        letter-spacing: 1.7px;
+    }
+    .binge-logo {
+        width: 5%;
+        margin-bottom: 5%;
+        position: relative;
+    }
+    @media only screen and (max-width:667px) {
+        .heading {
+            font-weight: 900;
+            font-size: 72px;
+        }
+    }
+    @media only screen and (max-width:1024px) {
+        .heading {
+            font-weight: 900;
+            font-size: 72px;
+        }
     }
 }
+
+;

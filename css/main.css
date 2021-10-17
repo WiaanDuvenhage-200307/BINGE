@@ -4,6 +4,11 @@
     overflow-x: none;
 }
 
+/* .binge-logo, .logo{
+    background-color: url("/img/binge-logo-sm.svg");
+    height: 20%;
+} */
+
 body{
     background-color: #1D1B27;
 }
@@ -158,4 +163,29 @@ footer{
     display: block;
     margin: 20px;
     text-align: right;
+}
+
+.btn {
+    
+    border-radius: 60px;
+    width: 40%;
+    padding: 0 auto;
+
+}
+/*.bt*/ .prim{
+    background-color: #D3418D;
+    color: #fff;
+    letter-spacing: 1.7px;
+}
+.login{
+    background-color: #D3418D;
+    color: #fff;
+    letter-spacing: 1.7px;
+}
+/*.bt*/ .sec{
+    background-color:#1D1B27;
+  
+    border-color:   #5E1DE8;
+    color: rgba(255, 255, 255, 0.911);
+    letter-spacing: 1.7px;
 }
