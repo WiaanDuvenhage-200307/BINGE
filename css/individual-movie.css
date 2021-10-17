@@ -215,3 +215,168 @@ footer{
 .socials{
     text-align: center;
 }
+
+.hamburger-items{
+    display: none;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.dropdown{
+    display: block;
+    transition: ease-in;
+}
+
+/* Desktop @media */
+@media only screen and (min-width: 1440px){
+    .hamburger-nav{
+        display: none;
+    }
+
+
+    .binge-later{
+        display: none;
+    }
+}
+
+
+/* Tablet @media */
+@media only screen and (max-width: 1024px){
+
+    .nav-bar{
+        display: none;
+    }
+
+    .pink-block{
+        height: 100px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 100px;
+    }
+
+    .pink-block h1{
+        font-size: 14px;
+        font-family: 'cantarell';
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .director{
+        display: none;
+    }
+
+    .movie-img{
+        height: 300px;
+    }
+
+    .navbar-toggler{
+        width: 230px;
+        border: none;
+        text-align: right;
+    }
+
+    .logo{
+        text-align: right;
+    }
+
+    .profile-group{
+        text-align: right;
+    }
+
+    .navbar-toggler-icon{
+        margin: 0 auto;
+    }
+
+    .hamburger-nav{
+        background-color: #5a596b;
+    }
+
+    .cast-header, .cast-left{
+        display: none;
+    }
+
+    .binge-later-button{
+        display: none;
+    }
+
+    .contact-info li{
+        display: none;
+    }
+
+    .contact-info img{
+        position: relative;
+        top: 30px;
+        margin-bottom:20px ;
+    }
+
+}
+
+/* Mobile @media */
+@media only screen and (max-width: 667px){
+    .nav-bar{
+        display: none;
+    }
+
+    .navbar-toggler{
+        width: 40px;
+        border: none;
+        text-align: right;
+    }
+
+    .profile-icon{
+        height: 30px;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .container-fluid{
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
+    .movie-img{
+        height: 200px;
+    }
+
+    .pink-block{
+       width: auto;
+        height: 40px;
+        margin-right: -10px;
+    }
+
+    .icon{
+        height: 20px;
+    }
+
+    .pink-block h1{
+        display: none;
+    }
+
+    .pink-block h2{
+        display: none;
+    }
+
+    .pink-block img{
+        text-align: center;
+    }
+
+    .movie-details h2{
+        font-size: 20px;
+    }
+
+    .contact-info li{
+        display: none;
+    }
+
+    .contact-info img{
+        position: relative;
+        top: 50px;
+        margin-bottom:20px ;
+    }
+
+}
