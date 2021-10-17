@@ -19,9 +19,19 @@ $(function(){
             console.log(i.poster_path);
             $(".movie-cards").append(`
 
-                <div class="col-xxl-2 col-md-3 col-12 movie">
-                    <img src=${imagePrefix + i.poster_path} alt="movie_card height="323px" width="100%">
+            <div class="col-xxl-2 col-md-3 col-12 movie">
+            <div class="overlay">
+                <img src="${imagePrefix + i.poster_path}" alt="movie_card height="323px" width="100%">
+                <div class="movie-details">
+
+                    <h1>${i.title}</h1>
+                    <h2>${i.release_date}</h2>
+                    <h3>BINGE SCALE:  ${i.vote_average}</h3>
+
                 </div>
+            </div>
+            
+        </div>
 
            `);
         });
@@ -31,7 +41,6 @@ $(function(){
     $(".navbar-toggler").on("click", function(){
         $(".hamburger-items").slideDown();
     });
-
     
 
    
