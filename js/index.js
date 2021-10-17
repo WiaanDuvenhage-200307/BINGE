@@ -28,7 +28,7 @@ $(function(){
     
                `);
 
-            console.log(result.results[i].title);
+            console.log(result.results[i].id);
 
         }
 

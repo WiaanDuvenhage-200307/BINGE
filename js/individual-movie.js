@@ -1,5 +1,10 @@
 $(function(){
 
+    $(".navbar-toggler").on("click", function(){
+        $(".hamburger-items").toggleClass("dropdown");
+    });
+    
+
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get("id");
