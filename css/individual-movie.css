@@ -248,7 +248,7 @@ footer{
 /* Tablet @media */
 @media only screen and (max-width: 1024px){
 
-    .nav-bar{
+    .desktop-nav{
         display: none;
     }
 
@@ -319,9 +319,11 @@ footer{
 
 /* Mobile @media */
 @media only screen and (max-width: 667px){
-    .nav-bar{
+    .desktop-nav{
         display: none;
     }
+
+    
 
     .navbar-toggler{
         width: 40px;
