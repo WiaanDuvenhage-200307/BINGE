@@ -15,7 +15,7 @@ $(function(){
 
             <div class="col-sm-2 binge-item-text" style="height: 300px;"><a href= '../pages/individual-movie.html?id='${result.results[i].id}'><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="300px" width="100%"></a></div>
             <div class="col-sm-6 binge-item-text" style="background-color: transparent; height: 200px; margin-left: 50px;"><h5>${result.results[i].title}</h5>
-            <h2>${result.results[i].release_date}</h2><h2 >${result.results[i].overview}</h2><br><h7>BINGE RATING: ${result.results[i].vote_average}</h7></div>
+            <h5 style="text-align: left; float: left;">RELEASE DATE:</h5><h2 style="text-align: left; float: left;">${result.results[i].release_date}</h2><br><h2 >${result.results[i].overview}</h2><br><h7>BINGE RATING: ${result.results[i].vote_average}</h7></div>
             <div class="col-sm-2 binge-item-remove" style="background-color: teal; height: 50px; margin-left: 100px;"></div>
                 
                 
