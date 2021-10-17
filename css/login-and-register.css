@@ -221,3 +221,17 @@ body{
     margin-bottom: 5%;
      position: relative;
  }
+
+ @media only screen and (max-width:667px) {
+    .heading {
+        font-weight: 900;
+        font-size: 72px;
+    }
+ }
+
+ @media only screen and (max-width:1024px) {
+    .heading {
+        font-weight: 900;
+        font-size: 72px;
+    }
+ }
