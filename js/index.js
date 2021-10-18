@@ -12,19 +12,20 @@ $(function(){
 
             var card = $(".movie-cards").append(`
 
-                <div class="col-xxl-2 col-md-3 col-12 movie">
+                <div class="col-xxl-2 col-md-3 col-12 movie>
                     <div class="overlay">
                         <a href= '../pages/individual-movie.html?id='${result.results[i].id}'><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
-                        <div class="movie-details" style="text-align: center;">
+                        <div class="movie-details" style="text-align: center; height:150px">
         
                             <h5>${result.results[i].title}</h5>
                             <h2>${result.results[i].release_date}</h2>
-                            <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+                            <h7>${result.results[i].vote_average}</h7>
         
                         </div>
                     </div>
                 
                 </div>
+                <br>
     
                `);
 

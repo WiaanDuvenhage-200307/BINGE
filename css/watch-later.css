@@ -124,6 +124,27 @@ h6{
     margin-top: 30px;
 
 }
+
+.prim {
+    /* primary button */
+    background-color: #D3418D;
+    color: #fff;
+    letter-spacing: 1.7px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.prim:hover {
+    background-color: #D3418D;
+    box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    -webkit-box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    -moz-box-shadow: 5px 5px 58px 10px rgba(211, 65, 141, 0.77);
+    transition: 0.3s;
+}
+
+.prim:focus {
+    background-color: #D3418D;
+}
 .watchlater {
     padding:2%;
 }
