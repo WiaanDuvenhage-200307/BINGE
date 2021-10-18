@@ -117,12 +117,11 @@ a{
 /* End of Nav Styling */
 
 
-.movie-img{
+.movie-img img{
     border-top-left-radius: 250px;
     border-bottom-left-radius: 250px;
-    border: 5px solid #D3418D;
     height: 500px;
-    background-image: url("https://image.tmdb.org/t/p/original/yO2LFaO62SoM1ZuOq26hWLF1TQ4.jpg") ;
+    object-fit: cover;
 }
 
 .pink-block{
