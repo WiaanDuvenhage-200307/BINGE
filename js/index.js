@@ -1,6 +1,7 @@
 $(function(){
     // Getting all the images of all the movies
-    const url = "https://api.themoviedb.org/3/movie/popular?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&language=en-US&page=8";
+    // Accessing 8th page of the popular movies
+    const url = "https://api.themoviedb.org/3/movie/popular?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&language=en-US&page=8"; 
 
     const imagePrefix = "https://image.tmdb.org/t/p/original";
 

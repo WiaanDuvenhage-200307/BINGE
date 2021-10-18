@@ -154,9 +154,53 @@ h6{
 /* .email-us
 .call-us
 .who-we-are
-
+li{
+    display: inline;
+    color: white;
+    font-size: 25px;
+    font-family: "fjalla one";
+    margin: 0px 100px;
+}
 .container */
+.legal-info li{
+    font-size: 14px;
+    font-family: "cantarell";
+    margin-bottom: -11%;
+    color: aliceblue;
+ align-items: baseline;
+ justify-items: baseline;
+}
+.socials img{
+    margin: 0 auto;
+    margin: 20px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+   
+}
+li{
+    color: aliceblue;
+}
 
+.contact-info{
+    margin-left: 70%;
+    color: aliceblue;
+}
+.socials{
+   margin-bottom: -4%;
+}
+.footer{
+    background-color: #605F67;
+    border-radius: 6px 6px 0px 0px;
+    font-family: 'Cantarell';
+    font-size: 11px;
+  
+    padding-bottom: 10px;
+  
+   
+    width: 100%;
+}
 /* @ MEDIA IPHONE PLUS */
 @media only screen and (max-width:414px) {
     h1 {
