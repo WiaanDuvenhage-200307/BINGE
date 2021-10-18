@@ -4,7 +4,7 @@ a {
 
 body{
     background-color: #1D1B27;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .search-bar{

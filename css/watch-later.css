@@ -4,6 +4,7 @@ a {
 
 body{
     background-color: #1D1B27;
+    position: relative;
 }
 
 .search-bar{
@@ -125,4 +126,41 @@ h6{
 }
 .watchlater {
     padding:2%;
+}
+
+.legal-info li{
+    display: block;
+    font-size: 14px;
+    font-family: 'Cantarell';
+    margin: 20px;
+    text-align: left;
+}
+
+.socials{
+    text-align: center;
+}
+
+.socials img{
+    margin: 0 auto;
+    margin: 20px;
+}
+
+footer{
+    background-color: #5a596b;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+.contact-info li{
+    font-size: 14px;
+    font-family: 'Cantarell';
+    display: block;
+    margin: 20px;
+    text-align: right;
+}
+
+.container-fluid {
+    position: relative;
+    padding: 0;
 }
