@@ -4,6 +4,7 @@ a {
 
 body{
     background-color: #1D1B27;
+    overflow: hidden;
 }
 
 .search-bar{
@@ -11,6 +12,7 @@ body{
     background-color: #D3418D;
     border-radius: 30px;
     margin-top: 20px; 
+    overflow: hidden;
 }
 
 
@@ -28,6 +30,7 @@ body{
 .logo{
     text-align: center;
     padding: 10px;
+    
 }
 
 .search-bar{
@@ -36,12 +39,14 @@ body{
     border-radius: 30px;
     padding: 20px;
     margin-top: 20px; 
+    overflow: hidden;
 }
 
 .search-bar h2{
     font-family: 'Cantarell';
     text-align: left;
     font-size: 14px;
+    overflow: hidden;
 }
 
 
@@ -56,7 +61,8 @@ h1{
     font-family: 'Fjalla One';
     color: white;
     text-align: center;
-    font-size: 48px;
+    font-size: 82px;
+    margin-top: 30px;
 }
 
 h2{
@@ -88,6 +94,7 @@ h5{
     font-size: 15px;
 }
 
+
 hr{
     margin: 0 auto;
     width: 100px;
@@ -99,7 +106,7 @@ h6{
     text-align: center;
     font-family: 'Cantarell';
     color: white;
-    font-size: 11px;
+    font-size: 48px;
 }
 
 .navSection {
@@ -126,3 +133,66 @@ h6{
 .watchlater {
     padding:2%;
 }
+.header-about-us{
+    background-image: url('../assets/WatchLater_Header_img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+    margin-bottom: 6%;
+    padding: 3.2%; /*brings 'about us h donw mid*/
+    overflow: hidden;
+
+}
+
+.questionmark-icon, .email-us-icon, .call-us-icon{
+    height: 70%;
+  
+}
+.body-row{
+    height: 300px;
+}
+/* .email-us
+.call-us
+.who-we-are
+
+.container */
+
+/* @ MEDIA IPHONE PLUS */
+@media only screen and (max-width:414px) {
+    h1 {
+        font-size: 48px;
+
+    }
+    .header-about-us{
+        height: 15vh;
+        padding: 1%;
+    }
+    h6{
+font-size: 24px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .body-row {
+        height: auto;
+       
+    }
+  h2{
+      font-size: 5.5px; 
+  }
+}
+@media only screen and (max-width:1024px) {
+    .body-row {
+        height: auto;
+       
+    }
+    .header-about-us{
+        height: 15vh;
+        padding: 1%;
+    }
+    h2{
+        font-size: 11px; 
+        align-items: center;
+    }
+}
+
