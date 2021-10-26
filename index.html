@@ -20,6 +20,7 @@
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -104,22 +105,22 @@
 
            
             
-            <div class="col-12 movie-slider">
-
-                <figure>
-                    <img src="https://image.tmdb.org/t/p/original/2351A6j2YJjuKstEyZl9uObpMrm.jpg" alt="backdrop">
-                    <img src="https://image.tmdb.org/t/p/original/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg" alt="backdrop">
-                    <img src="https://image.tmdb.org/t/p/original/vXvqRA7ziRnriMOUlwZpvQ4qXKg.jpg" alt="backdrop">
-                    <img src="https://image.tmdb.org/t/p/original/bRYEP7gdMi8lqlzT5csXpKTJaQ5.jpg" alt="backdrop">
-                    <img src="https://image.tmdb.org/t/p/original/2351A6j2YJjuKstEyZl9uObpMrm.jpg" alt="backdrop">
-                </figure>
-
+        <div id="carousel-block" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="https://image.tmdb.org/t/p/original/2351A6j2YJjuKstEyZl9uObpMrm.jpg" class="d-block w-100" alt="first-image">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://image.tmdb.org/t/p/original/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg" class="d-block w-100" alt="second-image">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="https://image.tmdb.org/t/p/original/kzIiKLccwuzD3qD5OHFyPIkiqEw.jpg" class="d-block w-100" alt="third-image">
+              </div>
             </div>
+          </div>
                
 
                 
-
-            <div class="col-12 header-img-2">
                
 
                 <div class="welcome-msg">
@@ -135,7 +136,6 @@
                     
                 </div> <!--Welcome Message-->
                 
-            </div> <!--Header Image -->
 
             
            

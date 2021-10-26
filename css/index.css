@@ -20,46 +20,11 @@
     color: white;
 }
 
-.movie-slider{
-    overflow: hidden;
+.carousel-item{
+    height: 500px;
 }
 
-.movie-slider figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0; /* Pushes it to the left */ 
-    animation: 20s slider infinite;
-}
 
-.slider figure img{
-    float: left;
-    object-fit: fill;
-}
-
-@keyframes slider{
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 0;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    75%{
-        left: -300%;
-    }
-}
 
 .welcome-msg{
     padding: 20px;
@@ -71,6 +36,7 @@
     border-radius: 6px;
     position: relative;
     z-index: 999;
+    display: none;
 }
 
 .welcome-msg h1{

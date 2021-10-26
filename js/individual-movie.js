@@ -36,7 +36,7 @@ $(function(){
         )
 
         $(".movie-details").append(
-            "<h1>"+ movie_title +"</h1>\
+            "<h1 class=''>"+ movie_title +"</h1>\
             <h2>"+ movie_genre1 + " | "+ movie_genre2 +"</h2>\
             <h2>"+ movie_date +"</h2>\
             <div class='rating'>\

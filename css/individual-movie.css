@@ -228,7 +228,7 @@ footer{
 }
 
 /* Desktop @media */
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 768px){
     .hamburger-nav{
         display: none;
     }
@@ -256,6 +256,18 @@ footer{
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         width: 100px;
+        position: relative;
+        top: 200px;
+    }
+
+    .movie-details{
+        position: relative;
+        top: 170px;
+    }
+
+    .overview{
+        position: relative;
+        top: 250px;
     }
 
     .pink-block h1{
@@ -313,6 +325,11 @@ footer{
         top: 0px;
         margin-bottom:20px ;
     }
+    
+    footer{
+        position: relative;
+        top: 300px;
+    }
 
 }
 
@@ -349,9 +366,11 @@ footer{
     }
 
     .pink-block{
-       width: auto;
-        height: 40px;
+        width: auto;
+        height: 50px;
         margin-right: -10px;
+        position: relative;
+        top: 300px;
     }
 
     .icon{
