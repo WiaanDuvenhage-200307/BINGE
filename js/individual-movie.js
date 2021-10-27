@@ -81,6 +81,19 @@ $(function(){
         } else{
             movie_image;
         }
+
+        if(result.genres[0].id == "27"){
+            $(".accessibility").text("VIEWER DISCRETION IS ADVISED");
+            $(".accessibility").css("font-family", 'fjalla one');
+            $(".accessibility").css("font-size", '24px');
+            $(".accessibility").css("color", 'white');
+            $(".accessibility").css("backgroundColor", '#D3418D');
+            $(".accessibility").css("width", '200px');
+            $(".accessibility").css("padding", '10px');
+            $(".accessibility").css("text-align", 'center');
+        } else{
+            $(".accessibility").css("display", 'none');
+        }
     })
 
 })
