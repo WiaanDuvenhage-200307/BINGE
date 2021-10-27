@@ -32,6 +32,14 @@ $(function(){
                 
                 </div>`);
 
+        // $(".carousel-inner").append(`
+        //     <div class="carousel-item active" data-bs-interval="5000">
+        //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+        //     </div>
+
+            
+        // `)
+
             
 
         }
@@ -42,10 +50,19 @@ $(function(){
     $(".navbar-toggler").on("click", function(){
         $(".hamburger-items").toggleClass("dropdown");
     });
-    
 
-   
+    // Set a delay for sign up alert to show
+    setTimeout(function(){
+        showElement();
+    }, 10000);
 
-    
+    function showElement(){
+        $('.welcome-msg').toggleClass('show');
+        $('main').css('opacity', '0.4'); 
+        $('main, header').css('pointer-events', 'none'); 
+        $('.welcome-msg').css('pointer-events', 'auto'); 
+        $('.welcome-msg').css('opacity', '1');
+        $('.welcome-msg').css('z-index', '999');
+    }
 
 });

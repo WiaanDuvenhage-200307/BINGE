@@ -35,39 +35,7 @@
 
     <header>
 
-        <div class="hamburger-nav">
-
-            <div class="navbar navbar-dark">
-                
-                <button class="navbar-toggler col-3" type="button" data-bs-toggle="collapse" data-bs-target=".hamburger-items" aria-controls= "hamburger-items" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
-            
-                <div class="col-3 logo ">
-                    <a href="../index.html"><img class="binge-logo" src="../assets/Logo.svg" alt="logo" height="70px">
-                </div>
-
-                <div class="col-3 profile-group">
-                    <a href="../pages/login-and-register.html"></a><img class="profile-icon" src="../assets/icons/account.svg" alt="icon" height="70px" >
-                </div>
-
-                <img class="col-3 search" src="../assets/icons/search.svg" alt="search" height="30px" height="70px">
-    
-            </div>
-
-            <div class="hamburger-items">
-
-                <ul>
-                    <a href="#"><li>HOME</li></a>
-                    <hr>
-                    <a href="pages/movie-library.html"><li>LIBRARY</li></a>
-                    <hr>
-                    <li>ABOUT</li>
-                    <hr>
-                    <a href="pages/watch-later.html"><li>BINGE LATER</li></a>
-                </ul>
-
-            </div>
-
-        </div>
+        
 
         <div class="desktop-nav row">
 
@@ -96,8 +64,10 @@
 
             </div>
 
-           
+        </div>
 
+        <div class="go-back d-lg-block d-xl-none">
+            <button class="btn btn-primary" type="submit" onclick="history.go(-1)"> <h2> &lArr; Go Back</h2> </button>
         </div>
         
     </header> <!--Header content-->
@@ -110,7 +80,7 @@
         <div class="row movie-info">
 
             <div class="col-6 movie-details"> <!--Actual Movie Details take first half of screen-->
-   
+
             </div>
 
             <div class="col-6"> <!--Extra info (Pink blocks) takes 2nd half of screen-->
