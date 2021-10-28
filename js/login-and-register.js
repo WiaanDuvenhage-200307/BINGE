@@ -1,13 +1,4 @@
-// const togglePassword = document.querySelector('#togglePassword');
-// const password = document.querySelector('#id_password');
 
-// togglePassword.addEventListener('click', function (e) {
-//   // toggle the type attribute
-//   const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-//   password.setAttribute('type', type);
-//   // toggle the eye slash icon
-//   this.classList.toggle('fa-eye-slash');
-// });
 
 
 // {/* <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" /> */}
@@ -65,51 +56,91 @@
 //     }); // end of click event
 
 // });
+//WAT GAAN HIER BO AAN? ONS OEFEN EN OEFEN EN OEFEN, MAAR TOE, BREAKTHROUGH. LEARING CURVE. 
 
-$(function(){
+//<SHANRE & MARCO>
+$(function () {
 
-    $(".log-in-btn").click(function(){
 
+    url = "https://owmakerspace.co.za/users/data.json";
+
+    $(".log-in-btn").click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        //prevent refresh
+        // var isloggedin = true;
+
+        searchedUsers = 0
         var username = $("#logname").val();
         var password = $(".pswlog").val();
-        url = "https://owmakerspace.co.za/users/data.json";
-
-        $.getJSON(url, function(result){
-            console.log(result.users);
 
 
-            for(i=0; i < result.users.length; i++){
 
-                if(result.users[i].username === username){
-                    console.log("user exists");
+        $.getJSON(url, function (json) {
 
-                    if(result.users[i].password === password){
-                        console.log("password match");
+            console.log(json.users);
+            json.users.every(user => {
+                searchedUsers++
+                if (user.username === username && user.password === password) {
+                    if (user.account === "active") {
+                        sessionStorage.setItem("username", username);
+                        console.log("logged in");
 
-                        if(result.users[i].account === "active"){
-                            window.location.href = "http://www.openwindow.co.za";
-                            sessionStorage.setItem("username", username);
-                        } else{
-                            $(".message").css('background-color', 'tomato');
-                            alert("This account does not exist.");
-                            console.log('account suspended')
-                        }
-
-                    } else{
-                        $(".message").css('background-color', 'tomato');
-                        alert("Email or Password does not match");
+                        //inside same statement
+                        enableLogInSession();
+                        return false;
+                    } else {
+                        $(".message").css("background-color", "peach");
+                        $(".message").text("Your Account Is Not Active");
+                        return false;
                     }
-                } else{
-                    $(".message").css('background-color', 'tomato');
-                    alert("Email or Password does not match");
+                } else if (searchedUsers >= json.users.length) {
+                    $(".message").css("color", "orange");
+
+                    $(".message").text("Your Email or Password Does Not Match");
+                    return false;
                 }
-
-                
-            }
+                else {
+                    return true;
+                }
+            })
         });
+        // if (isloggedin == true){
+        //     $(".welcome-msg").hide(); 
 
+    });
+    // $('.log-in-btn').on('click', function () {
+    //     $(".welcome-msg").remove(".welcome-msg");
 
-
-    });//end of click function
 
 });
+
+
+
+//add updated info to the index.html to show logged in user's name
+$('.acc-name').text(sessionStorage.getItem('username'));
+$('.acc-name').css("font-size", "10px");
+$('.acc-name').css("margin-left", "-4%");
+$('.acc-name').append(`
+        <img class="logout-btn" src="../assets/icons/logout.svg" alt="icon" height="30px" style="float: right; margin-top: -50%; margin-right: -30%">
+    `
+
+);
+
+
+function enableLogInSession() {
+    window.location.href = "../index.html";
+
+
+
+};
+
+
+
+    // $(".acc-name").append(
+
+    //     "<h1 class=''>"+ movie_title +"</h1>\
+
+
+
+

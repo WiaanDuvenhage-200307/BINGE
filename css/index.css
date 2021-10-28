@@ -45,7 +45,7 @@
     left: 650px;
     bottom: 400px;
     z-index: 999;
-    display: none;
+    
 }
 
 .show{
@@ -594,4 +594,8 @@ h6{
 }
 .watchlater {
     padding:2%;
+}
+.acc-name {
+    text-align: inherit;
+    margin-left: 7%;
 }
