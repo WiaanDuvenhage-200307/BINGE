@@ -77,38 +77,38 @@ $.getJSON(url, function (result) {
     })
 
     $(".instagram").mouseenter(function(){
-        $(this).attr('src', 'assets/icons/instagram-hover.svg')
+        $(this).attr('src', '../assets/icons/instagram-hover.svg')
     })
 
     $(".instagram").mouseleave(function(){
-        $(this).attr('src', 'assets/icons/instagram.svg')
+        $(this).attr('src', '../assets/icons/instagram.svg')
     })
 
     
     $(".facebook").mouseenter(function(){
-        $(this).attr('src', 'assets/icons/facebook-hover.svg')
+        $(this).attr('src', '../assets/icons/facebook-hover.svg')
     })
 
     $(".facebook").mouseleave(function(){
-        $(this).attr('src', 'assets/icons/facebook.svg')
+        $(this).attr('src', '../assets/icons/facebook.svg')
     })
 
     
     $(".twitter").mouseenter(function(){
-        $(this).attr('src', 'assets/icons/twitter-hover.svg')
+        $(this).attr('src', '../assets/icons/twitter-hover.svg')
     })
 
     $(".twitter").mouseleave(function(){
-        $(this).attr('src', 'assets/icons/twitter.svg')
+        $(this).attr('src', '../assets/icons/twitter.svg')
     })
 
     
     $(".youtube").mouseenter(function(){
-        $(this).attr('src', 'assets/icons/youtube-hover.svg')
+        $(this).attr('src', '../assets/icons/youtube-hover.svg')
     })
 
     $(".youtube").mouseleave(function(){
-        $(this).attr('src', 'assets/icons/youtube.svg')
+        $(this).attr('src', '../assets/icons/youtube.svg')
     })
 
     

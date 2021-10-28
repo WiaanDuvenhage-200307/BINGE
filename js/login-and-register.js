@@ -131,7 +131,7 @@ $('.ham-text').text("LOG OUT");
 
 
 function enableLogInSession() {
-    window.location.href = "../index.html";
+    window.location.href = "../pages/login-and-register.html";
 
 
 

@@ -1,5 +1,3 @@
-<!-- Wiaan Duvenhage #200307 -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,269 +7,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Your Metadata -->
-    <meta name="author" content="Wiaan Duvenhage">
+    <meta name="author" content="Shanre Scheepers MArco vd Merwe">
     <meta name="lecturer" content="Mike Maynard">
-    <meta name="studentnumber" content="200307">
+    <meta name="studentnumber" content="21100387">
     <meta name="assignment" content="DV100_T4_root">
     <meta name="subject" content="DV100_T4">
     <meta name="class" content="2">
 
-
+    <title>LOGIN & REGISTER</title>
     <title>BINGE©</title>
 
-    <!-- Bootstrap CDN -->
+    <!--Shanre Scheepers-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
-
-    <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css" />
-
-    <!-- Fonts -->
+    <!--BS-->
+    <link rel="stylesheet" href="css/login-and-register.css">
+    <!--CSS-->
+    <script src="js/login-and-register.js"></script>
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- jQuery CDN -->
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--iconscout link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Fjalla+One&display=swap" rel="stylesheet">
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Fjalla+One&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="assets/Binge-logo.svg">
+        <link rel="icon" href="assets/Binge-logo.svg">
 
 </head>
 
 <body>
 
+    <div class="section">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-sm-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
 
-    <header>
+                        <a href="pages/login-and-register.html"><img src="assets/binge-logo-sm.svg" class="binge-logo"></a>
+                        
+                        <h6 class="md-0 pb-3"> <!-- pb is shorthand Bootstrap for padding -->
+                            <span class="regSpan">REGISTER</span>
+                            <span class="logSpan">LOG IN</span>
+                        </h6>
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                        <label for="reg-log"></label>
 
+                        <div class="col-md-6 col-lg-6 card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <!-- <h4 class="pb-3">REGISTER</h4> -->
+                                            
+                                            <div class="form-group">
+                                                <input class="firstname" type="text" placeholder="First Name" id="fname" name="fname"
+                                                     required><br>
 
+                                                <input class="lastname" type="text" placeholder="Last Name" id="lname" name="lname"
+                                                 required><br>
+                                                <input class="email" type="email" placeholder="Your Email" id="email"
+                                                    name="email"   required><br>
+                                                <input class="psw" type="password" placeholder="Password"
+                                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                                    title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
+                                                    required><br>
+                                                <!-- This code says the input needed = password with digit, lower and uppercase 8+ characters long -->
+                                                <!--Form Name Email Password Input Fields-->
+                                                <a href="pages/login-and-register.html" class="btn prim mt-4" style="padding-block: 3px;">REGISTER</a>
+                                                <div class="message"></div>
+                                                <a href="#" class="btn sec mt-4" style="padding-block: 3px;">CANCEL</a>
+                                                <div class="message"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div class="hamburger-nav">
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <!-- <h4 class="md-4 pb-3">LOG IN</h4> -->
+                                            <form>
+                                                <div class="form-group">
+                                                
+                                                <div class="form-group mt-2">
+                                                    <input type="text" name="logname" class="form-style logname" placeholder="Full Name" id="logname" autocomplete="off" autofocus ><br>
+                                                    <input class="form-style logemail" type="email" placeholder="Your Email" id="email"
+                                                        name="email" required><br>
 
-            <div class="navbar navbar-dark">
+                                                    <input class="form-style pswlog" type="password" placeholder="Your Password"
+                                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                                        title="Your Password must be at least 8 characters long, containing digits, lowercase and uppercase characters"
+                                                        required name="logpass">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="btn mt-4 prim log-in-btn">LOG IN</div>
+                                            
+                                        
+                                        <div class="message"></div>
+                                    </div>
+                                </div>
+                            </div>
 
-                <button class="navbar-toggler col-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target=".hamburger-items" aria-controls="hamburger-items" aria-expanded="false"
-                    aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
-
-                <div class="col-3 logo ">
-                    <img class="binge-logo" src="/assets/binge-logo-sm.svg" alt="logo" height="70px">
-                </div>
-
-                <div class="col-3 profile-group">
-                    <a href="pages/login-and-register.html"><h7 class="hamnav-text">LOG IN</h7></a>
-                    <a href="pages/login-and-register.html"><img class="profile-icon" src="assets/icons/account.svg" alt="icon" height="70px"></a>
-                </div>
-
-                <img class="col-3 search" src="assets/icons/search.svg" alt="search" height="30px" height="70px">
-
-            </div>
-
-            <div class="hamburger-items">
-
-                <ul>
-                    <a href="#">
-                        <li>HOME</li>
-                    </a>
-                    <hr>
-                    <a href="pages/movie-library.html">
-                        <li>LIBRARY</li>
-                    </a>
-                    <hr>
-                    <li>ABOUT</li>
-                    <hr>
-                    <a href="pages/watch-later.html">
-                        <li>BINGE LATER</li>
-                    </a>
-                    <hr>
-                    <a href="pages/login-and-register.html">
-                        <li class="ham-text">LOG IN</li>
-                    </a>
-                </ul>
-
-            </div>
-
-            
-
-        </div>
-
-
-        <div class="nav-bar watchlater row">
-
-            <div class="col-md-1 col-lg-1 col-xxl-1 logo navSection">
-                <a href="../index.html"><img src="../assets/Logo.svg" alt="logo" height="90px"></a>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="/index.html">
-                    <h7 style="color: #D3418D;">HOME</h7>
-                </a></div>
-            <div class="col-md-2 col-lg-1 col-xxl-2 navSection navSectionTxt"><a href="/pages/movie-library.html">
-                    <h7>LIBRARY</h7>
-                </a></div>
-            <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="/pages/watch-later.html">
-                    <h7>BINGE LATER</h7>
-                </a></div>
-            <div class="col-md-2 col-lg-2 col-xxl-2 navSection navSectionTxt"><a href="/pages/about.html">
-                    <h7>ABOUT</h7>
-                </a></div>
-
-            <!--Account Name to be Called to LOG REG pg+js - Marco + Shanre 17:51-->
-            <div class="col-md-1 col-lg-1 col-xxl-1 profile-group navSection navSectionIcon">
-               <a href="pages/login-and-register.html"> <img class="profile-icon" src="../assets/icons/account.svg" alt="icon" height="48px"></a>
-                <p class="acc-name" style="color: white; text-align: left;">LOG IN</p> <!--gave this a class to be called in js-->
-               
-            </div>
-
-            <!-- <div class="col-md-2 col-lg-2 col-xxl-2 search-bar navSection navSectionIcon">
-                <h2>Search...</h2>
-                <img src="../assets/icons/search.svg" alt="surch" style="width: 40px; float: right; margin-top: -40px;">
-            </div> -->
-
-        </div>
-        <!--Nav Bar for Desktop-->
-
-
-
-        <div id="carousel-block" class="slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="https://image.tmdb.org/t/p/original/2351A6j2YJjuKstEyZl9uObpMrm.jpg" class="d-block w-100"
-                        alt="first-image">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="https://image.tmdb.org/t/p/original/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg" class="d-block w-100"
-                        alt="second-image">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="https://image.tmdb.org/t/p/original/kzIiKLccwuzD3qD5OHFyPIkiqEw.jpg" class="d-block w-100"
-                        alt="third-image">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="https://image.tmdb.org/t/p/original/uEWCi9fc89m9qS5SNshlvxkSsLJ.jpg" class="d-block w-100"
-                        alt="third-image">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="https://image.tmdb.org/t/p/original/fy8bBNQyKtRnznm3G3QWdu2wIC8.jpg" class="d-block w-100"
-                        alt="third-image">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="https://image.tmdb.org/t/p/original/ng6SSB3JhbcpKTwbPDsRwUYK8Cq.jpg" class="d-block w-100"
-                        alt="third-image">
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-
-        <div class="welcome-msg ">
-
-            <button class="btn-exit">&#x2715</button>
-            <h1>WELCOME! </h1> 
-            <h2>New to BINGE?</h2>
-            <h4>Sign up now!</h4>
-
-
-            <div class="button-group">
-                <a href="pages/login-and-register.html"><button class="btn btn-primary register-btn"> <!--gave register btn a class (S&M)-->
-                        <p>REGISTER</p>
-                    </button></a>
-            </div>
-
-        </div>
-        <!--Welcome Message-->
+    </div>
+    </div>
 
 
 
-
-
-        </div>
-        <!--Nav Bar for Desktop-->
-
-    </header>
-    <!--Header content-->
-
-    <main>
-
-        <div class="container-fluid ">
-
-            <div class="row">
-
-                <h1 class="movies-header" style="margin-top: -30px;">Popular on Binge</h1>
-                <h1 class="mobile-text">OUR RECOMMENDATIONS</h1>
-                <hr>
-                <h2 class="movies-subheader">Feel free to scroll through our selections</h2>
-                <h2 class="mobile-subtext">Scroll Through our Selections</h2>
-
-                <div class="movie-cards row">
-
-
-
-                </div>
-                <!--Movie Cards-->
-
-                <div class="register-remind col-12 row">
-
-                    <h2><strong>Register to view the rest of our website</strong></h2>
-                    <a href="pages/login-and-register.html"><button class="btn btn-primary">REGISTER</button></a>
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-        <!--Container Fluid-->
-
-    </main>
-    <!--Main Content-->
-
-    <footer class="row">
-
-        <div class="col-4 legal-info">
-            <ul>
-                <li>Privacy Policy</li>
-                <li>About Us</li>
-                <li>Terms of Use</li>
-            </ul>
-        </div>
-
-        <div class="col-4 socials">
-            <p style="color: white;">BINGE© | 2021</p>
-            <a href="https://instagram.com"><img src="assets/icons/instagram.svg" class="instagram" alt="instagram" height="30px"></a>
-            <a href="https://facebook.com"><img src="assets/icons/facebook.svg" class="facebook" alt="facebook" height="30px"></a>
-            <a href="https://youtube.com"><img src="assets/icons/youtube.svg" class="youtube" alt="youtube" height="30px"></a>
-            <a href="https://twitter.com"><img src="assets/icons/twitter.svg" class="twitter" alt="twitter" height="30px"></a>
-        </div>
-
-        <div class="col-4 contact-info">
-            <ul>
-                <a href="mailto:support@binge.co.za">
-                    <li>support@binge.co.za</li>
-                </a>
-                <li>+27 64 982 7731</li>
-            </ul>
-        </div>
-
-
-    </footer>
-    <!--Footer Content-->
-
-
-
-
-    <!-- JS -->
-     <!--ADDED REG-LOG JS : Calling Account Name via log-reg.js -- Shanre& Marco 18:00-->
-     <script src="js/login-and-register.js"></script>
-    <script src="js/index.js"></script>
-   
+    </div>
+    </div>
 </body>
+</html>
+
+  
+
+
+
+
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="js/login-and-register.js"></script>
+    <script src="js/index.js"></script>
+</body>
+   
 
 </html>
