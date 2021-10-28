@@ -70,8 +70,8 @@ $(function(){
 
     $(".log-in-btn").click(function(){
 
-        var username = $(".username").val();
-        var password = $(".password").val();
+        var username = $("#logname").val();
+        var password = $(".pswlog").val();
         url = "https://owmakerspace.co.za/users/data.json";
 
         $.getJSON(url, function(result){
@@ -87,7 +87,7 @@ $(function(){
                         console.log("password match");
 
                         if(result.users[i].account === "active"){
-                            window.location.href = "http://www.binge-movies.co.za";
+                            window.location.href = "http://www.openwindow.co.za";
                             sessionStorage.setItem("username", username);
                         } else{
                             $(".message").css('background-color', 'tomato');
