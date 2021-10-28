@@ -201,6 +201,8 @@ li{
    
     width: 100%;
 }
+
+
 /* @ MEDIA IPHONE PLUS */
 @media only screen and (max-width:414px) {
     h1 {
