@@ -3,6 +3,9 @@
     padding: 10px;
 }
 
+body{
+    user-select: none;
+}
 
 
 .nav-items{
@@ -38,12 +41,12 @@
     color: white;
     width: 559px;
     background-color: black;
-    height: 300px;
+    height: 350px;
     margin: 0 auto;
     border-radius: 6px;
-    position: fixed;
-    left: 650px;
-    bottom: 400px;
+    position: absolute;
+    left: 660px;
+    bottom: 350px;
     z-index: 999;
     
 }
@@ -278,6 +281,13 @@ footer{
     border-top: #D3418D;
 }
 
+.btn-exit{
+    text-align: center;
+    border-radius: 200px;
+    width: 40px;
+    background-color: #D3418D;
+    border: none;
+}
 
 /* Desktop @media query */
 @media only screen and (min-width: 1440px){
@@ -312,9 +322,9 @@ footer{
     .welcome-msg{
         height: 668px;
         width: 600px;
-        position: fixed;
-        left: 260px;
-        bottom: 400px;
+        position: absolute;
+        left: 10px;
+        bottom: 500px;
         padding: 60px;
     }
 
@@ -392,7 +402,10 @@ footer{
     .profile-group{
         text-align: right;
     }
-/*Corrected @media for .search - logo centered -shanre*/
+    .profile-group img{
+        cursor: pointer;
+    }
+
     .search{
         width: 30px;
         margin-right: 18%;
@@ -469,8 +482,8 @@ footer{
 
     .welcome-msg{
         width: 300px;
-        position: fixed;
-        left: 60px;
+        position: absolute;
+        left: 30px;
         top: 100px;
         padding: 30px;
     }

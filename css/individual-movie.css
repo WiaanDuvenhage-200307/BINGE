@@ -92,6 +92,11 @@ a{
     text-align: center;
 }
 
+.nav-items li:hover{
+    cursor:pointer;
+    color: #D3418D;
+}
+
 .profile-group{
     padding: 20px;
 }
