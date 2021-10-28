@@ -126,6 +126,8 @@ $('.acc-name').append(`
     `
 
 );
+$('.hamnav-text').text(sessionStorage.getItem('username'));
+$('.ham-text').text("LOG OUT");
 
 
 function enableLogInSession() {

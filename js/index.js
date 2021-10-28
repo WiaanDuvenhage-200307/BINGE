@@ -14,6 +14,11 @@ $('.logout-btn').on('click', function () {
 
     $(".acc-name").text("LOG IN");
 });
+$('.hamburger-log-out').on('click', function () {
+    //this code is to unset a session (storage) --take code from above and add remove(where get/setItem is)
+
+    $(".hamburger-log-out").text("LOG IN");
+});
 //MARCO  & SHANRE - End of Logout btn function//
 
 const url = "https://api.themoviedb.org/3/movie/popular?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&language=en-US&page=8";
