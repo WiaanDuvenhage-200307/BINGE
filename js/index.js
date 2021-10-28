@@ -16,7 +16,7 @@ $('.logout-btn').on('click', function () {
 });
 //MARCO  & SHANRE - End of Logout btn function//
 
-const url = "https://api.themoviedb.org/3/movie/popular?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&language=en-US&page=8";
+const url = "https://api.themoviedb.org/3/movie/popular?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&language=en-US&page=2";
 
 const imagePrefix = "https://image.tmdb.org/t/p/original";
 
@@ -60,10 +60,53 @@ $.getJSON(url, function (result) {
 
 });
 
-// Toggle the hamburger button
-$(".navbar-toggler").on("click", function () {
-    $(".hamburger-items").toggleClass("dropdown");
-});
+    // Toggle the hamburger button
+    $(".navbar-toggler").on("click", function () {
+        $(".hamburger-items").toggleClass("dropdown");
+    });
 
-});
+
+    // Closing the welcome message
+    $(".btn-exit").click(function(){
+        $(".welcome-msg").fadeOut();
+    })
+
+    $(".instagram").mouseenter(function(){
+        $(this).attr('src', 'assets/icons/instagram-hover.svg')
+    })
+
+    $(".instagram").mouseleave(function(){
+        $(this).attr('src', 'assets/icons/instagram.svg')
+    })
+
+    
+    $(".facebook").mouseenter(function(){
+        $(this).attr('src', 'assets/icons/facebook-hover.svg')
+    })
+
+    $(".facebook").mouseleave(function(){
+        $(this).attr('src', 'assets/icons/facebook.svg')
+    })
+
+    
+    $(".twitter").mouseenter(function(){
+        $(this).attr('src', 'assets/icons/twitter-hover.svg')
+    })
+
+    $(".twitter").mouseleave(function(){
+        $(this).attr('src', 'assets/icons/twitter.svg')
+    })
+
+    
+    $(".youtube").mouseenter(function(){
+        $(this).attr('src', 'assets/icons/youtube-hover.svg')
+    })
+
+    $(".youtube").mouseleave(function(){
+        $(this).attr('src', 'assets/icons/youtube.svg')
+    })
+
+    
+
+})
 
