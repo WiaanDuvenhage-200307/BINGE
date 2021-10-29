@@ -1,6 +1,6 @@
-/*** COLORS ***/
 
-/*** COLORS ***/
+
+/*** COLORS now defined ***/
 
 @bg-color: #913D88;
 @txt-color: #FFFFFF;
@@ -21,7 +21,7 @@
     }
 
 
-/*** STYLES ***/
+/*** sEAFCH BAR STYLES ***/
 
 .search {
 margin-top: -20px;

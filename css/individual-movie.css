@@ -83,19 +83,19 @@ a{
     color: white;
 }
 
-.search-bar{
+/* .search-bar{
     height: 50px;
     width: 250px;
     background-color: #D3418D;
     border-radius: 30px;
     padding: 20px;
     margin-top: 20px; 
-}
+} */
 
-.search-bar h2{
+/* .search-bar h2{
     font-size: 14px;
     text-align: left;
-}
+} */
 
 /* End of Nav Styling */
 

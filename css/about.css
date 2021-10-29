@@ -189,6 +189,7 @@ li{
 }
 .socials{
    margin-bottom: -4%;
+   margin-left: 40%;
 }
 .footer{
     background-color: #605F67;
@@ -226,6 +227,10 @@ font-size: 24px;
   h2{
       font-size: 5.5px; 
   }
+  footer{
+    position: relative;
+    top: 300px;
+}
 }
 @media only screen and (max-width:1024px) {
     .body-row {
@@ -239,6 +244,10 @@ font-size: 24px;
     h2{
         font-size: 11px; 
         align-items: center;
+    }
+    footer{
+       
+        top: 300px;
     }
 }
 
