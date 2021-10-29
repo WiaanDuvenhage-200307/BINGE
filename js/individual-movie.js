@@ -27,6 +27,14 @@ $(function(){
         movie_desc = result.overview;
         movie_duration = result.runtime;
         
+        sessionStorage.setItem("movieImg" , movie_image);
+        sessionStorage.setItem("movieTitle" , movie_title);
+        sessionStorage.setItem("movieGenre1" , movie_genre1);
+        sessionStorage.setItem("movieGenre2" , movie_genre2);
+        sessionStorage.setItem("movieDate" , movie_date);
+        sessionStorage.setItem("movieRate" , movie_rate);
+        sessionStorage.setItem("movieDesc" , movie_desc);
+
         
 
         $('.header-img').append(
@@ -96,4 +104,32 @@ $(function(){
         }
     })
 
+
+    
+    $(".watch-later-btn").click(function(){
+
+        $.getJSON(url, function(result){
+        
+
+            movie_image = imagePrefix + result.backdrop_path;
+            movie_title = result.title;
+            movie_genre1 = result.genres[0].name;
+            movie_genre2 = result.genres[1].name;
+            movie_date =  result.release_date.split("-").slice(0, -2);
+            movie_rate = result.vote_average;
+            movie_desc = result.overview;
+            movie_duration = result.runtime;
+            
+            sessionStorage.setItem("movieImg" , movie_image);
+            sessionStorage.setItem("movieTitle" , movie_title);
+            sessionStorage.setItem("movieGenre1" , movie_genre1);
+            sessionStorage.setItem("movieGenre2" , movie_genre2);
+            sessionStorage.setItem("movieDate" , movie_date);
+            sessionStorage.setItem("movieRate" , movie_rate);
+            sessionStorage.setItem("movieDesc" , movie_desc);
+
+        });
+
+        alert(movie_title + " Has been added to your Binge List!");
+    });
 })
