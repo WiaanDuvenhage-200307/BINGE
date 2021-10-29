@@ -332,10 +332,29 @@ $(function(){
         $(".filter-block").slideDown();
     })
 
-    // Filter function
+    // let allMovies = [];
+
+    // year Filter function
+    var enteredYear = null;
+    console.log(enteredYear);
+
+    
     $(".year-filter").on('keyup', function(){
-        console.log("pressed");
+        enteredYear = $(".year-filter").val();
+        const filteredMovies = allMovies.filter(movieYear => {
+            return movieYear.name.includes(enteredYear)
+        })
+        console.log(filteredMovies);
     })
+
+    //title search function
+    var enteredTitle = "";
+
+    $(".title-search").on("keyup", function(){
+        enteredTitle = $(this).val();
+        console.log(enteredTitle);
+    })
+
 
 
     
@@ -346,6 +365,10 @@ $(function(){
 
         console.log(result);
 
+    });
+
+    $(".navbar-toggler").on("click", function () {
+        $(".hamburger-items").toggleClass("dropdown");
     });
 
 

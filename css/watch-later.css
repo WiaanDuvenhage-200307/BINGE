@@ -260,3 +260,104 @@ footer{
     position: relative;
     padding: 0;
 }
+
+.hamburger-nav{
+    display: none;
+}
+
+.hamburger-nav{
+    display: none;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.hamburger-items li:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #D3418D;
+}
+
+.hamburger-items{
+    display: none;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.hamburger-items hr{
+    margin: 10px;
+    border-top: 2px solid #D3418D ;
+    margin-left: -40px;
+    width: 100%;
+}
+
+.dropdown{
+    display: block;
+    transition: ease-in;
+}
+
+li{
+    color: white;
+    text-align: 100%;
+}
+
+@media only screen and (max-width: 667px){
+  
+    .contact-info ul{
+        display: none;
+        display: column;
+    }
+
+    li{
+        position: relative;
+        right: 100px
+    }
+
+    .hamburger-nav{
+        display: block;
+    }
+
+    .navSection{
+        display: none;
+    }
+
+    .cntr{
+        display: none;
+    }
+
+    .binge-item-remove{
+        width: 100px;
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+  
+    .contact-info ul{
+        display: none;
+        display: column;
+    }
+
+    li{
+        position: relative;
+        right: 100px
+    }
+
+    .hamburger-nav{
+        display: block;
+    }
+
+    .navSection{
+        display: none;
+    }
+
+    .cntr{
+        display: none;
+    }
+
+    .binge-item-remove{
+        width: 200px;
+        font-size: 10px;
+    }
+}

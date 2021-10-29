@@ -2,9 +2,9 @@
 
 /*** COLORS now defined ***/
 
-@bg-color: #913D88;
+/* @bg-color: #913D88;
 @txt-color: #FFFFFF;
-@icn-color: #FFFFFF;
+@icn-color: #FFFFFF; */
 /*** DEMO ***/
 
 
@@ -477,6 +477,23 @@ h6 {
     margin: 20px;
 }
 
+.filter-block input::placeholder {
+    color: white;
+    font-family: 'cantarell';
+}
+
+.btn-primary{
+    background-color: #D3418D;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #D3418D;
+    box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    -webkit-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    -moz-box-shadow: 5px 5px 58px 10px rgba(211,65,141,0.77);
+    transition: 0.3s;
+}
 
 .movie-details{
     background-color: black;
@@ -485,6 +502,42 @@ h6 {
 .movie-cards{
     margin-bottom: 100px;
 }
+
+.hamburger-nav{
+    display: none;
+}
+
+.hamburger-nav{
+    display: none;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.hamburger-items li:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #D3418D;
+}
+
+.hamburger-items{
+    display: none;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.hamburger-items hr{
+    margin: 10px;
+    border-top: 2px solid #D3418D ;
+    margin-left: -40px;
+    width: 100%;
+}
+
+.dropdown{
+    display: block;
+    transition: ease-in;
+}
+
 
 @media only screen and (max-width: 667px){
   
@@ -496,6 +549,18 @@ h6 {
     li{
         position: relative;
         right: 100px
+    }
+
+    .hamburger-nav{
+        display: block;
+    }
+
+    .navSection{
+        display: none;
+    }
+
+    .cntr{
+        display: none;
     }
 }
 
