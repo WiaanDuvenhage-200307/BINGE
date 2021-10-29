@@ -27,28 +27,6 @@ h2{
     text-align: left;
 }
 
-h3{
-    font-size: 36px;
-    font-family: 'Cantarell';
-    color: white;
-    text-align: left;
-}
-
-h4{
-    color: white;
-    font-family: 'Cantarell';
-    text-align: left;
-    margin-bottom: 40px;
-    font-size: 24px;
-}
-
-h5{
-    text-align: center;
-    font-family: 'Fjalla One';
-    color: white;
-    font-size: 15px;
-}
-
 hr{
     margin: 0 auto;
     width: 100px;
@@ -170,11 +148,6 @@ h1,h2,h3,p{
     width: auto;
 }
 
-.body-text h3{
-    margin-bottom: 50px;
-    text-align: left; font-size: 16px;
-}
-
 u{
     text-decoration: underline 2px #D3418D;
     text-underline-offset: 10px;
@@ -275,6 +248,10 @@ footer{
     background-color: #D3418D;
 }
 
+.trailer-sec{
+    width: 500px;
+}
+
 
 /* Tablet @media */
 @media only screen and (max-width: 1024px){
@@ -305,10 +282,7 @@ footer{
         top: 170px;
     }
 
-    .overview{
-        position: relative;
-        top: 250px;
-    }
+    
 
     .pink-block h1{
         font-size: 14px;
@@ -356,6 +330,11 @@ footer{
         display: none;
     }
 
+    .watch-later-btn:hover{
+        transform: scale(1.5);
+        cursor:alias;
+    }
+
     .contact-info li{
         display: none;
     }
@@ -369,6 +348,11 @@ footer{
     footer{
         position: relative;
         top: 300px;
+    }
+
+    .body-text{
+        position: relative;
+        top: 200px;
     }
 
 }
@@ -455,6 +439,11 @@ footer{
         position: relative;
         top: 50px;
         margin-bottom:20px ;
+    }
+
+    .body-text{
+        position: relative;
+        top: 200px;
     }
 
 }

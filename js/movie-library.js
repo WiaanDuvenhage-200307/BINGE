@@ -332,6 +332,11 @@ $(function(){
         $(".filter-block").slideDown();
     })
 
+    // Filter function
+    $(".year-filter").on('keyup', function(){
+        console.log("pressed");
+    })
+
 
     
 

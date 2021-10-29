@@ -111,7 +111,5 @@ const imagePrefix = "https://image.tmdb.org/t/p/original";
         $(this).attr('src', '../assets/icons/youtube.svg')
     })
 
-    
-
 })
 

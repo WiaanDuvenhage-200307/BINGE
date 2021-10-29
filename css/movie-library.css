@@ -86,6 +86,7 @@ li{
     font-size: 14px;
     font-family: "cantarell";
     margin: 20px 100px;
+    text-align: left;
 }
 
 
@@ -398,6 +399,27 @@ h6{
     border: none;
     background-color: transparent;
     border: 2px solid #D3418D;
+}
+
+.movie-details{
+    background-color: black;
+}
+
+.movie-cards{
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 667px){
+  
+    .contact-info ul{
+        display: none;
+        display: column;
+    }
+
+    li{
+        position: relative;
+        right: 100px
+    }
 }
 
 
