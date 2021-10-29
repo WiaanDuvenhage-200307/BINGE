@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  
+    // for (i = 0; 1 >= XPathResult.movieImg; i++);
+  
 
     $(".binge-later-container").append(`
 
@@ -12,8 +15,17 @@ $(document).ready(function(){
         <hr>
         <br>
         `);
-        
+  
+
        $(".binge-item-remove").click(function(){
+
+        
            $(this).closest(".binge-item").fadeOut(200);
-       })
+
+           alert(itemName + " Has been removed from your Binge List.");
+           
+       });
+    //    $(".binge-later-container").addClass('.binge-item').append(sessionStorage.getItem);
+    //    $(".binge-later-container").append(result);
+    //  for ( i =0; i >= result[i].path; i++);
 })

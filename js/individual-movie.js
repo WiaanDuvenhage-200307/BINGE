@@ -134,4 +134,5 @@ $(function(){
 
         alert(movie_title + " Has been added to your Binge List!");
     });
+    
 })
