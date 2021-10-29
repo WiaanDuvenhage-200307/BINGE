@@ -1,6 +1,4 @@
-$(document).ready(function(e){
-
-
+$(document).ready(function(){
 
     $(".binge-later-container").append(`
 
@@ -13,10 +11,8 @@ $(document).ready(function(e){
     </div>
         <hr>
         <br>
+        `);
         
-
-       `);
-
        $(".binge-item-remove").click(function(){
            $(this).closest(".binge-item").fadeOut(200);
        })

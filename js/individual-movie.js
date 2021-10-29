@@ -105,8 +105,10 @@ $(function(){
     })
 
 
-    
+    var rowIndex = 0;    
     $(".watch-later-btn").click(function(){
+
+        rowIndex ++;
 
         $.getJSON(url, function(result){
         
