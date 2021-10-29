@@ -2,6 +2,10 @@
     position: relative;
 }
 
+body{
+    user-select: none;
+}
+
 hr {
     margin-top: 5%;
 }
@@ -361,6 +365,21 @@ h6{
 }
 .watchlater {
     padding:2%;
+}
+
+.filter-block{
+    display: none;
+    background-color: #605F67;
+    text-align: center;
+}
+
+.filter-block input{
+    padding: 10px;
+    border-radius: 30px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #D3418D;
 }
 
 

@@ -1,46 +1,336 @@
 $(function(){
     // Getting all the images of all the movies
     const url = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=1";
+    const url2 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=2";
+    const url3 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=3";
+    const url4 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=3";
+    const url5 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=3";
+    const url6 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=3";
+    const url7 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=3";
+    const url8 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=3";
+    const url9 = "https://api.themoviedb.org/3/discover/movie?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&certification_country=US&certification.lte=G&sort_by=popularity.desc&page=3";
 
     const imagePrefix = "https://image.tmdb.org/t/p/original";
     
 
-    $.getJSON(url, function(result){
+    $.getJSON(url, function (result) {
 
-        for( i = 0; i < 12; i++){
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
 
 
-            $(".movie-cards").append(`
+            console.log(result);
 
-                <div class="col-xxl-2 col-md-3 col-12 movie">
-                    <div class="overlay">
-                        <a href= '../pages/individual-movie.html?id='${result.results[i].id}'><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
-                        <div class="movie-details" style="text-align: center; opacity: 0;">
-        
-                            <h5>${result.results[i].title}</h5>
-                            <h2>${result.results[i].release_date}</h2>
-                            <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
-        
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
                         </div>
-                    </div>
-                
-                </div>
-    
-               `);
+                    
+                    </div>`);
 
-            console.log(result.results[i].id);
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
 
         }
 
-        $(".movie").mouseenter(function(){
-            $(this).find(".movie-details").css('opacity', '1')
-        });
+    });
 
-        $(".movie").mouseleave(function(){
-            $(this).find(".movie-details").css('opacity', '0')
-        });
+    $.getJSON(url2, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
 
     });
+
+    $.getJSON(url3, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
+
+    });
+
+    $.getJSON(url4, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
+
+    });
+
+    $.getJSON(url5, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
+
+    });
+
+    $.getJSON(url6, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
+
+    });
+
+    $.getJSON(url7, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
+
+    });
+
+    $.getJSON(url8, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
+
+    });
+
+    $.getJSON(url9, function (result) {
+
+        for (i = 0; i < result.results.length; i++) {
+
+            var year = result.results[i].release_date.split("-").slice(0, -2);
+
+
+            console.log(result);
+
+            var card = $(".movie-cards").append(
+                `<div class="col-xxl-2 col-md-3 col-12 movie">
+                        <div class="overlay">
+                            <a href= "../pages/individual-movie.html?id= `+ result.results[i].id + `"><img src="${imagePrefix + result.results[i].poster_path}" alt="movie_card height="323px" width="100%"></a>
+                            <div class="movie-details" style="text-align: center;">
+            
+                                <h5>${result.results[i].title}</h5>
+                                <h2>${year}</h2>
+                                <h7>BINGE SCALE: ${result.results[i].vote_average}</h7>
+            
+                            </div>
+                        </div>
+                    
+                    </div>`);
+
+            // $(".carousel-inner").append(`
+            //     <div class="carousel-item active" data-bs-interval="5000">
+            //         <img src="https://image.tmdb.org/t/p/original${result.results[i].poster_path}" class="d-block w-100" alt="first-image">
+            //     </div>
+
+            // `)
+
+        }
+
+    });
+
+    $(".deep-filter").on("click", function(){
+        $(".filter-block").slideDown();
+    })
 
 
     
