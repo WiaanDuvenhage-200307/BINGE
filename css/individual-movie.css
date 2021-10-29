@@ -250,6 +250,8 @@ footer{
 
 .trailer-sec{
     width: 500px;
+    display: none;
+    margin: 0 auto;
 }
 
 
@@ -355,6 +357,10 @@ footer{
         top: 200px;
     }
 
+    .trailer-sec{
+        position: relative;
+        top: 200px;
+    }
 }
 
 /* Mobile @media */

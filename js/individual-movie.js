@@ -155,4 +155,8 @@ $(function(){
     $(".watch-later-btn").mouseleave(function(){
         $(this).css('transform', 'scale(1)');
     })
+
+    $('.trailer-btn').on("click", function(){
+        $(".trailer-sec").slideDown();
+    })
 })
