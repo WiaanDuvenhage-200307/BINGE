@@ -170,8 +170,11 @@ li{
  align-items: baseline;
  justify-items: baseline;
 }
+
+.socials{
+    text-align: center;
+}
 .socials img{
-    margin: 0 auto;
     margin: 20px;
     text-align: center;
 }
@@ -191,16 +194,11 @@ li{
    margin-bottom: -4%;
    margin-left: 40%;
 }
-.footer{
-    background-color: #605F67;
-    border-radius: 6px 6px 0px 0px;
-    font-family: 'Cantarell';
-    font-size: 11px;
-  
-    padding-bottom: 10px;
-  
-   
-    width: 100%;
+
+
+footer{
+        position: relative;
+        top: 300px;
 }
 
 

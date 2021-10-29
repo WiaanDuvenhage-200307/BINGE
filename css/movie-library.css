@@ -463,6 +463,8 @@ h6 {
     display: none;
     background-color: #605F67;
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .filter-block input {
@@ -472,6 +474,7 @@ h6 {
     border: none;
     background-color: transparent;
     border: 2px solid #D3418D;
+    margin: 20px;
 }
 
 

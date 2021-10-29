@@ -369,6 +369,10 @@ footer{
         display: none;
     }
 
+    .accessibility{
+        font-size: 9px;
+    }
+
     .go-back{
         display: block;
         padding-left: 50px;
@@ -450,6 +454,14 @@ footer{
     .body-text{
         position: relative;
         top: 200px;
+    }
+
+    .trailer-sec{
+        width: 300px;
+    }
+
+    .trailer-btn img{
+        height: 20px;
     }
 
 }
