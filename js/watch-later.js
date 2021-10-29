@@ -18,11 +18,8 @@ $(document).ready(function(){
   
 
        $(".binge-item-remove").click(function(){
-
-        
            $(this).closest(".binge-item").fadeOut(200);
 
-           alert(itemName + " Has been removed from your Binge List.");
            
        });
     //    $(".binge-later-container").addClass('.binge-item').append(sessionStorage.getItem);

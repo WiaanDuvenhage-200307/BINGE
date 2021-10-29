@@ -104,7 +104,7 @@
 
                 <div class="col-10 filter-block text-center ">
                     <h1>Filter a bit deeper</h1>
-                    <input type="number" placeholder="Year">
+                    <input class="year-filter" type="number" placeholder="Year">
                     <input type="radio">5
                     <input type="radio">4
                     <input type="radio">3
@@ -125,7 +125,7 @@
 
         <footer class="row">
 
-            <div class="col-xxl-4 legal-info">
+            <div class="col-4 legal-info">
                 <ul>
                     <li>Privacy Policy</li>
                     <li>About Us</li>
@@ -133,23 +133,29 @@
                 </ul>
             </div>
     
-            <div class="col-xxl-4 socials">
+            <div class="col-4 socials">
                 <p style="color: white;">BINGE© | 2021</p>
-                <img src="../assets/icons/instagram.svg" alt="instagram" height="30px">
-                <img src="../assets/icons/facebook.svg" alt="facebook" height="30px">
-                <img src="../assets/icons/youtube.svg" alt="youtube" height="30px">
-                <img src="../assets/icons/twitter.svg" alt="twitter" height="30px">
+                <a href="https://instagram.com"><img src="../assets/icons/instagram.svg" class="instagram" alt="instagram" height="30px"></a>
+                <a href="https://facebook.com"><img src="../assets/icons/facebook.svg" class="facebook" alt="facebook" height="30px"></a>
+                <a href="https://youtube.com"><img src="../assets/icons/youtube.svg" class="youtube" alt="youtube" height="30px"></a>
+                <a href="https://twitter.com"><img src="../assets/icons/twitter.svg" class="twitter" alt="twitter" height="30px"></a>
             </div>
     
-            <div class="col-xxl-4 contact-info">
+            <div class="col-4 contact-info">
+                <div class="contact-icons">
+                    <img src="../assets/icons/email.svg" alt="" width="20px">
+                    <img src="../assets/icons/phone.svg" alt="" width="20px">
+                </div>
                 <ul>
-                    <a href="mailto:support@binge.co.za"><li>support@binge.co.za</li></a>
+                    <a href="mailto:support@binge.co.za">
+                        <li>support@binge.co.za</li>
+                    </a>
                     <li>+27 64 982 7731</li>
                 </ul>
             </div>
-            
     
-        </footer> <!--Footer Content-->
+        </footer>
+        <!--Footer Content-->
     <script src="../js/movie-library.js"></script>
     <script src="../js/search.js"></script>
 </body>

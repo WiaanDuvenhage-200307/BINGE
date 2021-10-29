@@ -11,12 +11,14 @@ $(function(){
 
     const url = "https://api.themoviedb.org/3/movie/"+id+"?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b";
 
+    const url2 = "https://api.themoviedb.org/3/movie/"+id+"/videos?api_key=2b5c4ad7d6c5ddafd1383a90b3aca91b&language=en-US";
+
     const imagePrefix = "https://image.tmdb.org/t/p/original";
 
     console.log(url);
 
     $.getJSON(url, function(result){
-        
+        console.log(result);
 
         movie_image = imagePrefix + result.backdrop_path;
         movie_title = result.title;
@@ -55,7 +57,7 @@ $(function(){
 
         $(".overview").append(
             " <div class='body-text col-xxl-6 col-12'>\
-            <h3>"+ movie_desc +"</h3>\
+            <h4>"+ movie_desc +"</h4>\
             </div>"
         )
 
@@ -104,6 +106,16 @@ $(function(){
         }
     })
 
+    $.getJSON(url2, function(result){
+        movie_trailer = result.results[0].key;
+
+        console.log(movie_trailer);
+
+        $('.trailer-sec').append(`
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/${movie_trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`  
+        )
+    })
+
 
     var rowIndex = 0;    
     $(".watch-later-btn").click(function(){
@@ -134,5 +146,17 @@ $(function(){
 
         alert(movie_title + " Has been added to your Binge List!");
     });
-    
+
+    $(".watch-later-btn").mouseenter(function(){
+        $(this).css('transform', 'scale(1.2)');
+        $(this).css('transition', '0.2s');
+    })
+
+    $(".watch-later-btn").mouseleave(function(){
+        $(this).css('transform', 'scale(1)');
+    })
+
+    $('.trailer-btn').on("click", function(){
+        $(".trailer-sec").slideDown();
+    })
 })
