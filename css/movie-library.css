@@ -59,21 +59,39 @@ hr {
 }
 
 
-.footer{
-    background-color: #605F67;
-    border-radius: 6px 6px 0px 0px;
+footer{
+    background-color: #5a596b;
+    padding: 10px;
+}
+
+.contact-info li{
+    font-size: 14px;
     font-family: 'Cantarell';
-    font-size: 11px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
+    display: block;
+    margin: 20px;
+    text-align: right;
+}
+
+.socials{
+    text-align: center;
+}
+
+a{
+    text-align: none;
 }
 
 li{
     display: block;
-    margin-right: 20px;
     color: white;
+    font-size: 14px;
+    font-family: "cantarell";
+    margin: 20px 100px;
+}
+
+
+.socials img{
+    margin: 0 auto;
+    margin: 20px;
 }
 
 .social-group{
