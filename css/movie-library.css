@@ -1,8 +1,84 @@
+/*** COLORS ***/
+
+/*** COLORS ***/
+
+@bg-color: #913D88;
+@txt-color: #FFFFFF;
+@icn-color: #FFFFFF;
+/*** DEMO ***/
+
+
+
+
+.cntr {
+    display: table;
+    width: 100%;
+    height: 100%;}
+    .cntr-innr {
+      
+        text-align: center;
+        vertical-align: middle;
+    }
+
+
+/*** STYLES ***/
+
+.search {
+margin-top: -20px;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    box-sizing: border-box;
+    margin: 0px 8px 7px 0px;
+    padding: 7px 9px 0px 9px;
+    border: 3px solid #FFFFFF;
+   
+    border-radius: 25px;
+    transition: all 200ms ease;
+    cursor: text;
+}
+
+.search:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    right: -5px;
+    top: 21px;
+    border: 1px solid #FFFFFF;
+   
+    background: #FFFFFF;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    transition: all 200ms ease;
+}
+
+.search active, .search:hover {
+    width: 200px;
+    margin-right: 0px;
+}
+
+.search :after {
+    height: 20px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+ 
+   
+    font-size: 15px;
+    color: #ffff;
+    background: transparent;
+    outline-width: 0px;
+    
+}
+
 .container-fluid {
     position: relative;
 }
 
-body{
+body {
     user-select: none;
 }
 
@@ -23,8 +99,7 @@ hr {
     background-color: transparent;
 }
 
-
-.card:hover{
+.card:hover {
     cursor: pointer;
 }
 
@@ -40,7 +115,8 @@ hr {
 .header {
     position: relative;
 }
-.movie-cards{
+
+.movie-cards {
     padding-top: 50px;
     padding-bottom: 30px;
     display: flex;
@@ -50,6 +126,7 @@ hr {
     margin: 0 auto;
     text-align: center;
 }
+
 .cards {
     background-color: aliceblue;
     height: 100px;
@@ -58,8 +135,7 @@ hr {
     padding: 100px;
 }
 
-
-.footer{
+.footer {
     background-color: #605F67;
     border-radius: 6px 6px 0px 0px;
     font-family: 'Cantarell';
@@ -70,44 +146,48 @@ hr {
     flex-direction: row;
 }
 
-li{
+li {
     display: block;
     margin-right: 20px;
     color: white;
 }
 
-.social-group{
+.social-group {
     text-align: center;
 }
 
-.social-group p{
+.social-group p {
     margin-top: 30px;
     color: white;
 }
-  .filter{
-      display: flex;
-      justify-content: center;
-  }
-  .filter-button {
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-button {
     border-radius: 4px;
     padding: 10px 15px;
     background-color: #131313;
     margin: 5px 2.5px;
     color: white;
     height: 50px;
-  }
-  .filter-button:hover {
+}
+
+.filter-button:hover {
     cursor: pointer;
-  }
-  
-  .filter-active {
+}
+
+.filter-active {
     background-color: #D3418D;
-  }
-span{
+}
+
+span {
     margin: 5px;
 }
 
-.email-phone{
+.email-phone {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -115,81 +195,76 @@ span{
     margin-left: 30px;
 }
 
-.to-top{
+.to-top {
     margin-left: 10px;
 }
-
-
 
 a {
     text-decoration: none;
 }
 
-body{
+body {
     background-color: #1D1B27;
 }
 
-
-.logo{
+.logo {
     margin-top: 4px;
- }
+}
 
-.hamburger{
+.hamburger {
     width: 21px;
     height: 21px;
     margin-top: 16px;
     margin-left: 19px;
 }
 
-.logo{
+.logo {
     text-align: center;
     padding: 10px;
 }
 
-.search-bar{
+/* .search-bar{
     height: 50px;
     background-color: #D3418D;
     border-radius: 30px;
     padding: 20px;
     margin-top: 20px; 
-}
+} */
 
-.search-bar h2{
+.search-bar h2 {
     font-family: 'Cantarell';
     text-align: left;
     font-size: 14px;
 }
 
-
-
-h7{ 
+h7 {
     color: white;
     font-size: 25px;
     font-family: "fjalla one";
 }
 
-h1{
+h1 {
     font-family: 'Fjalla One';
     color: white;
     text-align: center;
     font-size: 72px;
 }
 
-h2{
+h2 {
     font-size: 14px;
     font-family: 'Cantarell';
     color: white;
     text-align: center;
 }
 
-h3{
+h3 {
     font-size: 36px;
     font-family: 'Cantarell';
     color: white;
     text-align: center;
 }
 
-h4{
+h4 {
     color: white;
     font-family: 'Cantarell';
     text-align: center;
@@ -197,20 +272,20 @@ h4{
     font-size: 24px;
 }
 
-h5{
+h5 {
     text-align: center;
     font-family: 'Fjalla One';
     color: white;
     font-size: 15px;
 }
 
-hr{
+hr {
     margin: 0 auto;
     width: 100px;
     border-top: 3px solid #D3418D;
 }
 
-h6{
+h6 {
     padding-top: 11px;
     text-align: center;
     font-family: 'Cantarell';
@@ -233,87 +308,84 @@ h6{
 .navSectionIcon {
     margin-top: 20px;
 }
-.watchlater {
-    padding:2%;
-}
 
+.watchlater {
+    padding: 2%;
+}
 
 a {
     text-decoration: none;
 }
 
-body{
+body {
     background-color: #1D1B27;
 }
 
-.search-bar{
+/* .search-bar{
     height: 50px;
     background-color: #D3418D;
     border-radius: 30px;
     margin-top: 20px; 
+} */
+
+.logo {
+    margin-top: 4px;
 }
 
-
-.logo{
-    margin-top: 4px;
- }
-
-.hamburger{
+.hamburger {
     width: 21px;
     height: 21px;
     margin-top: 16px;
     margin-left: 19px;
 }
 
-.logo{
+.logo {
     text-align: center;
     padding: 10px;
 }
 
-.search-bar{
+/* .search-bar{
     height: 50px;
     background-color: #D3418D;
     border-radius: 30px;
 
     margin-top: 20px; 
-}
+} */
 
-.search-bar h2{
+/* .search-bar h2{
     font-family: 'Cantarell';
     text-align: left;
     font-size: 14px;
-}
+} */
 
-
-
-h7{ 
+h7 {
     color: white;
     font-size: 25px;
     font-family: "fjalla one";
 }
 
-h1{
+h1 {
     font-family: 'Fjalla One';
     color: white;
     text-align: center;
     font-size: 48px;
 }
 
-h2{
+h2 {
     font-size: 14px;
     font-family: 'Cantarell';
     color: white;
     text-align: center;
 }
 
-h3{
+h3 {
     font-size: 36px;
     font-family: 'Cantarell';
     color: white;
     text-align: center;
 }
 
-h4{
+h4 {
     color: white;
     font-family: 'Cantarell';
     text-align: center;
@@ -321,20 +393,20 @@ h4{
     font-size: 24px;
 }
 
-h5{
+h5 {
     text-align: center;
     font-family: 'Fjalla One';
     color: white;
     font-size: 15px;
 }
 
-hr{
+hr {
     margin: 0 auto;
     width: 100px;
     border-top: 3px solid #D3418D;
 }
 
-h6{
+h6 {
     padding-top: 11px;
     text-align: center;
     font-family: 'Cantarell';
@@ -361,19 +433,19 @@ h6{
 
 .navSectionSrch {
     margin-top: 30px;
-
 }
+
 .watchlater {
-    padding:2%;
+    padding: 2%;
 }
 
-.filter-block{
+.filter-block {
     display: none;
     background-color: #605F67;
     text-align: center;
 }
 
-.filter-block input{
+.filter-block input {
     padding: 10px;
     border-radius: 30px;
     height: 50px;
@@ -381,5 +453,3 @@ h6{
     background-color: transparent;
     border: 2px solid #D3418D;
 }
-
-
